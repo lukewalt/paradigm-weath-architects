@@ -1,1 +1,1 @@
-# paradigm-weath-architects-
+# paradigm-weath-architects
