@@ -1,0 +1,22 @@
+{
+  "name": "paradigm-weath-architects",
+  "homepage": "https://github.com/lukewalt/paradigm-weath-architects",
+  "description": "",
+  "main": "",
+  "authors": [
+    "luke woodward"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.0",
+    "google-fonts": "*",
+    "firebase": "^3.7.0"
+  }
+}
