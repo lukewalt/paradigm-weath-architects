@@ -1,2 +1,5 @@
 console.log("welcome to the website");
-$("body").append(`<h1>HEY</h1>`)
+
+$(document).ready(function(){
+ $('.parallax').parallax();
+});
