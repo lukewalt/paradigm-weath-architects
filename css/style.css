@@ -28,6 +28,10 @@ p {
   position: absolute;
 }
 
+.hide {
+  visibility: none;
+}
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
