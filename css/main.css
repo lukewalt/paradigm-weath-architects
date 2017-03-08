@@ -8,5 +8,16 @@ img {
 
 /* ------------- NAV BAR -----------------*/
 .nav-wrapper {
-  background-color: lightgrey;
+  background-color: #fff;
+  padding: 0 5%;
+}
+
+.nav-links {
+  color: tomato;
+}
+
+/*------------- VISIBILTY ----------------*/
+
+.hide {
+  visibility: none;
 }
