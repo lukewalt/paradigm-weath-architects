@@ -17,6 +17,7 @@
   "dependencies": {
     "materialize": "^0.98.0",
     "google-fonts": "*",
-    "firebase": "^3.7.0"
+    "firebase": "^3.7.0",
+    "material-icons": "^0.1.0"
   }
 }

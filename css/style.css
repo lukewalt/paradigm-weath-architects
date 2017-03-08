@@ -24,13 +24,23 @@ p {
   width: 100%;
 }
 
+i {
+  color: teal;
+}
+
 #canvas {
   position: absolute;
+}
+
+.tag-under {
+  display: block;
+  margin-top: 25%;
 }
 
 .hide {
   visibility: none;
 }
+
 
 
 @media only screen and (max-width : 992px) {

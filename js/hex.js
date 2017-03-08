@@ -7,7 +7,7 @@ let height = window.innerHeight;
 
 let centerX = width * 0.5;
 let centerY = height * 0.5;
-let colors = ["#1d5672", "#444", "lightblue", "#E8CAA1", "tomato"];
+let colors = ["rgba(255, 255, 255, 0.2)"];
 
 canvas.width = width;
 canvas.height = height;
