@@ -7,13 +7,13 @@ let height = window.innerHeight;
 
 let centerX = width * 0.5;
 let centerY = height * 0.5;
-let colors = ["lightgreen", "#424254", "lightblue", "#E8CAA4", "tomato"];
+let colors = ["#1d5672", "#424254", "lightblue", "#E8CAA4", "tomato"];
 
 canvas.width = width;
 canvas.height = height;
 
 const MAX_LINE_WIDTH = 1,
-  SIZE = 25,
+  SIZE = 55,
   OFFSET = SIZE / 5,
   VELOCITY_X = 20,
   VELOCITY_Y = 20,
