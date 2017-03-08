@@ -1,4 +1,7 @@
-body {
-  background-color: tomato;
-  
+.parallax-container {
+  height: 500px;
+}
+
+img {
+  height: 100%;
 }
