@@ -5,3 +5,8 @@
 img {
   height: 100%;
 }
+
+/* ------------- NAV BAR -----------------*/
+.nav-wrapper {
+  background-color: lightgrey;
+}
