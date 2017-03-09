@@ -9,8 +9,9 @@ p {
   line-height: 2rem;
 }
 
+
 .button-collapse {
-  color: #26a69a;
+  color: #006880;
 }
 
 .parallax-container {
@@ -25,7 +26,7 @@ p {
 }
 
 i {
-  color: teal;
+  color: #006880;
 }
 
 #canvas {
@@ -39,6 +40,33 @@ i {
 
 .nav-width {
   width: 92%;
+}
+
+.italix-banner {
+  font-style: italic;
+  color: #fb8233;
+}
+
+.transp-sect {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.maslow {
+  display: block;
+  float: right;
+  height: 400px;
+  margin-left: 7%;
+}
+
+.secondary-color {
+  background-color: #006880;
+}
+
+.cprfoot {
+  background-color: #2d798b;
+  padding: 1% 0;
 }
 
 .hide {
