@@ -37,6 +37,10 @@ i {
   margin-top: 25%;
 }
 
+.nav-width {
+  width: 92%;
+}
+
 .hide {
   visibility: none;
 }
