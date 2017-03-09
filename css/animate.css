@@ -3,45 +3,38 @@
 
 .sentence {
   color: #444;
-  font-size: 5em;
-  /*text-align: center;*/
+  font-size: 6em;
+  text-align: left;
+  margin: 10px 15px 0 -15px;
 }
 
 
 /*Vertical Sliding*/
 .slidingVertical{
 	display: inline;
-  padding: 5%;
+  padding: 0 5%;
 }
 .slidingVertical span{
-	animation: topToBottom 12.5s linear infinite 0s;
-	-ms-animation: topToBottom 12.5s linear infinite 0s;
-	-webkit-animation: topToBottom 12.5s linear infinite 0s;
+	animation: topToBottom 21s linear infinite 0s;
+	-ms-animation: topToBottom 21s linear infinite 0s;
+	-webkit-animation: topToBottom 21s linear infinite 0s;
 	color: #444;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
 }
 .slidingVertical span:nth-child(2){
-	animation-delay: 2.5s;
-	-ms-animation-delay: 2.5s;
-	-webkit-animation-delay: 2.5s;
+	animation-delay: 7s;
+	-ms-animation-delay: 7s;
+	-webkit-animation-delay: 7s;
 }
 .slidingVertical span:nth-child(3){
-	animation-delay: 5s;
-	-ms-animation-delay: 5s;
-	-webkit-animation-delay: 5s;
+	animation-delay: 14s;
+	-ms-animation-delay: 14s;
+	-webkit-animation-delay: 14s;
 }
-.slidingVertical span:nth-child(4){
-	animation-delay: 7.5s;
-	-ms-animation-delay: 7.5s;
-	-webkit-animation-delay: 7.5s;
-}
-.slidingVertical span:nth-child(5){
-	animation-delay: 10s;
-	-ms-animation-delay: 10s;
-	-webkit-animation-delay: 10s;
-}
+
+
 
 /*topToBottom Animation*/
 @-moz-keyframes topToBottom{
@@ -207,9 +200,9 @@
 }
 
 .fadeIn span {
-  animation: fadeEffect 12.5s linear infinite 0s;
-  -ms-animation: fadeEffect 12.5s linear infinite 0s;
-  -webkit-animation: fadeEffect 12.5s linear infinite 0s;
+  animation: fadeEffect 21s linear infinite 0s;
+  -ms-animation: fadeEffect 21s linear infinite 0s;
+  -webkit-animation: fadeEffect 21s linear infinite 0s;
   color: #444;
   opacity: 0;
   overflow: hidden;
@@ -217,28 +210,18 @@
 }
 
 .fadeIn span:nth-child(2) {
-  animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
+  animation-delay: 7s;
+  -ms-animation-delay: 7s;
+  -webkit-animation-delay: 7s;
 }
 
 .fadeIn span:nth-child(3) {
-  animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
+  animation-delay: 14s;
+  -ms-animation-delay: 14s;
+  -webkit-animation-delay: 14s;
 }
 
-.fadeIn span:nth-child(4) {
-  animation-delay: 7.5s;
-  -ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
-}
 
-.fadeIn span:nth-child(5) {
-  animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-}
 
 
 /*FadeIn Animation*/
@@ -851,7 +834,7 @@
   text-indent: 8px;
 }
 
-.popEffect h1 {
+.popEffect span {
   animation: pop 12.5s linear infinite 0s;
   -ms-animation: pop 12.5s linear infinite 0s;
   -webkit-animation: pop 12.5s linear infinite 0s;
@@ -861,29 +844,18 @@
   position: absolute;
 }
 
-.popEffect h1:nth-child(2) {
+.popEffect span:nth-child(2) {
   animation-delay: 2.5s;
   -ms-animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
 }
 
-.popEffect h1:nth-child(3) {
+.popEffect span:nth-child(3) {
   animation-delay: 5s;
   -ms-animation-delay: 5s;
   -webkit-animation-delay: 5s;
 }
 
-.popEffect h1:nth-child(4) {
-  animation-delay: 7.5s;
-  -ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
-}
-
-.popEffect h1:nth-child(5) {
-  animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-}
 
 
 /*Pop Effect Animation*/
@@ -976,11 +948,10 @@
 /*Push Effect*/
 
 .pushEffect {
-  display: inline;
-  text-indent: 8px;
+
 }
 
-.pushEffect h1 {
+.pushEffect span {
   animation: push 12.5s linear infinite 0s;
   -ms-animation: push 12.5s linear infinite 0s;
   -webkit-animation: push 12.5s linear infinite 0s;
@@ -990,29 +961,18 @@
   position: absolute;
 }
 
-.pushEffect h1:nth-child(2) {
+.pushEffect span:nth-child(2) {
   animation-delay: 2.5s;
   -ms-animation-delay: 2.5s;
   -webkit-animation-delay: 2.5s;
 }
 
-.pushEffect h1:nth-child(3) {
+.pushEffect span:nth-child(3) {
   animation-delay: 5s;
   -ms-animation-delay: 5s;
   -webkit-animation-delay: 5s;
 }
 
-.pushEffect h1:nth-child(4) {
-  animation-delay: 7.5s;
-  -ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
-}
-
-.pushEffect h1:nth-child(5) {
-  animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-}
 
 
 /*Push Effect Animation*/
