@@ -17,7 +17,6 @@ p {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
   color: rgba(255,255,255,.9);
 }
 
@@ -35,7 +34,7 @@ i {
 
 .tag-under {
   display: block;
-  margin-top: 25%;
+  margin-top: 170px;
 }
 
 .nav-width {
@@ -61,12 +60,16 @@ i {
 }
 
 .secondary-color {
-  background-color: #006880;
+  background-color: #444;
 }
 
 .cprfoot {
-  background-color: #2d798b;
+  background-color: #5e5e5e;
   padding: 1% 0;
+}
+
+.header-cont {
+  text-align: center;
 }
 
 .hide {
@@ -74,14 +77,13 @@ i {
 }
 
 
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
+    top: 5%;
   }
   #index-banner .section {
-    top: 10%;
+    top: 3%;
   }
 }
 
