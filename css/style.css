@@ -4,8 +4,17 @@ body > * {
 }
 
 nav ul a,
-nav .brand-logo {
+nav {
   color: #444;
+}
+
+.brand-logo {
+  height: 75px;
+  margin: .5% 0;
+}
+
+.pad-nav {
+  height: 95px;
 }
 
 nav ul a:hover {
