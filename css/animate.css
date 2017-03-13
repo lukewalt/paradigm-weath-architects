@@ -18,6 +18,7 @@
 	-ms-animation: topToBottom 21s linear infinite 0s;
 	-webkit-animation: topToBottom 21s linear infinite 0s;
 	color: #444;
+  font-weight: 900;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;

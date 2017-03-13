@@ -56,7 +56,8 @@ i {
 .transp-sect {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
-  padding: 3%;
+  padding: 10%;
+
 }
 
 .maslow {
@@ -79,7 +80,27 @@ i {
   padding: 0 5%;
 }
 
-/*--------------- LOGIN -----------*/
+/*---------------------- SIDE NAV ---------------------*/
+
+
+.side-nav {
+  background-color: #fc8033;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.side-nav a {
+  color: white;
+  font-size: 1.5em;
+
+}
+
+.side-nav a:hover {
+  background-color: white;
+}
+
+
+/*---------------------- LOGIN ---------------------*/
 
 .login-cont{
   display: inline-block;
@@ -110,9 +131,14 @@ i {
   box-shadow: none;
 }
 
+/*-------------------- HIDE --------------------*/
+
 .hide {
   visibility: none;
 }
+
+
+/*-------------------- MEDIA QUERIES --------------------*/
 
 
 @media only screen and (max-width : 992px) {
@@ -129,7 +155,16 @@ i {
   #index-banner .section {
     top: 0;
   }
+
+  .maslow {
+    height: 200px;
+    float: none;
+    text-align: center;
+    margin: auto;
+  }
 }
+
+/*---------------------- ICONS ---------------------- */
 
 .icon-block {
   padding: 0 15px;
@@ -137,6 +172,8 @@ i {
 .icon-block .material-icons {
   font-size: inherit;
 }
+
+/*---------------------- FOOTER ---------------------- */
 
 footer.page-footer {
   margin: 0;
