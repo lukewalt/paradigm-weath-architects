@@ -1,4 +1,4 @@
-var app = angular.module('pwa', ['ngRoute'])
+var app = angular.module('pwa', ['ngRoute']);
 
 app.config(($routeProvider, $locationProvider) => {
 
@@ -36,7 +36,7 @@ app.config(($routeProvider, $locationProvider) => {
         templateUrl: '/partials/who.html'
     })
     .otherwise({
-        redirectTo: '/home'
+        redirectTo: '/'
     })
 
 })
