@@ -1,7 +1,201 @@
-.parallax-container {
-  height: 500px;
+body > * {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-img {
-  height: 100%;
+nav ul a,
+nav {
+  color: #444;
+}
+
+.brand-logo {
+  height: 75px;
+  margin: .5% 0;
+}
+
+.pad-nav {
+  height: 95px;
+}
+
+nav ul a:hover {
+  color: #fb8233;
+}
+
+p {
+  line-height: 2rem;
+}
+
+
+.button-collapse {
+  color: #006880;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+i {
+  color: #006880;
+}
+
+#canvas {
+  position: absolute;
+}
+
+.tag-under {
+  display: block;
+  margin-top: 190px;
+}
+
+.nav-width {
+  width: 92%;
+}
+
+.italix-banner {
+  font-style: italic;
+  color: #fb8233;
+}
+
+.transp-sect {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 8%;
+
+}
+
+.maslow {
+  display: block;
+  float: right;
+  height: 400px;
+  margin-left: 7%;
+}
+
+.secondary-color {
+  background-color: #444;
+}
+
+.cprfoot {
+  background-color: #5e5e5e;
+  padding: 1% 0;
+}
+
+.header-pad {
+  padding: 0 5%;
+}
+
+/*---------------------- SIDE NAV ---------------------*/
+
+
+.side-nav {
+  background-color: #fc8033;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.side-nav a {
+  color: white;
+  font-size: 1.5em;
+
+}
+
+.side-nav a:hover {
+  background-color: white;
+}
+
+
+/*---------------------- LOGIN ---------------------*/
+
+.login-cont{
+  display: inline-block;
+  padding: 32px 48px 0px 48px;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+#login-btn {
+  background-color: #fb8233;
+  margin-bottom: 15px;
+}
+
+
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: #fb8233;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #fb8233;
+  box-shadow: none;
+}
+
+/*-------------------- HIDE --------------------*/
+
+.hide {
+  visibility: none;
+}
+
+
+/*-------------------- MEDIA QUERIES --------------------*/
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 5%;
+  }
+  #index-banner .section {
+    top: 3%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .maslow {
+    height: 200px;
+    float: none;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/*---------------------- ICONS ---------------------- */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+/*---------------------- FOOTER ---------------------- */
+
+footer.page-footer {
+  margin: 0;
+}
+
+.foot-content {
+  margin-top: 5%;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.contact-nav {
+  display: flex;
+  justify-content: space-between;
 }
