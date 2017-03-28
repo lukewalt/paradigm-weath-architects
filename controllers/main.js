@@ -1,7 +1,5 @@
 app.controller('MainCtrl', function ($scope, hexFactory){
 
-  hexFactory.hex()
-
   (function($){
     $(function(){
 
