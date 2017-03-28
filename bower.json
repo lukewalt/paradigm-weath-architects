@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "materialize": "^0.98.0",
-    "google-fonts": "*",
-    "firebase": "^3.7.0"
+    "firebase": "^3.7.0",
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3"
   }
 }
