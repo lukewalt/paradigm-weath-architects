@@ -31,6 +31,12 @@ node_modules
 jspm_packages
 lib
 
+shapes
+spinning-cube
+swing
+
+
+
 # Optional npm cache directory
 .npm
 
