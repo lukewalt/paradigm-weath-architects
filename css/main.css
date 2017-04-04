@@ -5,15 +5,20 @@ body > * {
 nav ul a,
 nav {
   color: #444;
+  box-shadow: none;
+}
+
+.main-header {
+  background: linear-gradient(orange, white)
 }
 
 .brand-logo {
-  height: 75px;
+  height: 50px;
   margin: .5% 0;
 }
 
 .pad-nav {
-  height: 95px;
+  height: 65px;
 }
 
 nav ul a:hover {
@@ -23,7 +28,6 @@ nav ul a:hover {
 p {
   line-height: 2rem;
 }
-
 
 .button-collapse {
   color: #006880;
@@ -41,10 +45,6 @@ p {
 
 i {
   color: #006880;
-}
-
-#canvas {
-  position: absolute;
 }
 
 .tag-under {
@@ -90,7 +90,7 @@ i {
 
 /*---------------------- SIDE NAV ---------------------*/
 
-
+/*
 .side-nav {
   background-color: #fc8033;
   text-align: center;
@@ -106,6 +106,152 @@ i {
 .side-nav a:hover {
   background-color: white;
 }
+*/
+
+
+
+.leader {
+  width: 100%;
+  height: 66%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.main-nav ul {
+  width: 100%;
+  list-style: none;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.is-active-menu {
+  overflow: hidden;
+}
+.is-active-menu .main-nav {
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.is-active-menu .wrapper {
+  position: relative;
+  z-index: 20;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  margin-top: -70px;
+}
+
+.nav-toggle {
+  top: 25px;
+  z-index: 2;
+  right: 12px;
+  width: 25px;
+  height: 20px;
+  padding: 8px 0;
+  cursor: pointer;
+  position: absolute;
+}
+.nav-toggle span {
+  height: 4px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  background: #fff;
+  white-space: nowrap;
+  width: 25px;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.nav-toggle::before, .nav-toggle::after {
+  left: 0;
+  content: '';
+  width: 25px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: width 0.2s ease-in-out, background 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, background 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.nav-toggle::before {
+  top: 0;
+}
+.nav-toggle::after {
+  bottom: 0;
+}
+.nav-toggle.menu-open span {
+  background: rgba(255, 255, 255, 0);
+}
+.nav-toggle.menu-open::before {
+  top: 8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.nav-toggle.menu-open::after {
+  bottom: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.nav-toggle.menu-open::before, .nav-toggle.menu-open::after {
+  width: 26px;
+  background: #fff;
+}
+.nav-toggle.menu-open:hover span, .nav-toggle.menu-open:focus span, .nav-toggle.menu-open:active span {
+  background: rgba(255, 255, 255, 0);
+}
+.nav-toggle.menu-open:hover::before, .nav-toggle.menu-open:focus::before, .nav-toggle.menu-open:active::before {
+  top: 8px;
+  left: -3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.nav-toggle.menu-open:hover::after, .nav-toggle.menu-open:focus::after, .nav-toggle.menu-open:active::after {
+  left: 9px;
+  bottom: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.nav-toggle.menu-open:hover::before, .nav-toggle.menu-open:hover::after, .nav-toggle.menu-open:focus::before, .nav-toggle.menu-open:focus::after, .nav-toggle.menu-open:active::before, .nav-toggle.menu-open:active::after {
+  width: 18px;
+}
+.nav-toggle:hover span, .nav-toggle:focus span, .nav-toggle:active span {
+  background: rgba(255, 255, 255, 0);
+}
+.nav-toggle:hover::before, .nav-toggle:focus::before, .nav-toggle:active::before {
+  top: 8px;
+  left: -3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.nav-toggle:hover::after, .nav-toggle:focus::after, .nav-toggle:active::after {
+  left: 9px;
+  bottom: 8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.nav-toggle:hover::before, .nav-toggle:hover::after, .nav-toggle:focus::before, .nav-toggle:focus::after, .nav-toggle:active::before, .nav-toggle:active::after {
+  width: 18px;
+}
+
 
 
 /*---------------------- LOGIN ---------------------*/
@@ -145,9 +291,7 @@ i {
   visibility: none;
 }
 
-
 /*-------------------- MEDIA QUERIES --------------------*/
-
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
