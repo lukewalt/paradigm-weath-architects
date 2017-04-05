@@ -6,5 +6,9 @@ app.controller('MainCtrl', function ($scope){
 
   $scope.hide = true;
 
+  AOS.init({
+  duration: 1500,
+  })
+
 
 })

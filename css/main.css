@@ -3,7 +3,8 @@ body > * {
 }
 
 .main-header {
-  background: linear-gradient(orange, white)
+  background: linear-gradient(orange, white);
+  height: 700px;
 }
 
 h1 {
