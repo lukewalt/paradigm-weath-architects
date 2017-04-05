@@ -37,6 +37,14 @@ app.config(($routeProvider, $locationProvider) => {
         controller: 'WhoCtrl',
         templateUrl: '/partials/who.html'
     })
+    .when('/mission', {
+        controller: 'MisVisCtrl',
+        templateUrl: '/partials/mission.html'
+    })
+    .when('/vision', {
+        controller: 'MisVisCtrl',
+        templateUrl: '/partials/vision.html'
+    })
     .when('/resources', {
         controller: 'ResrCtrl',
         templateUrl: '/partials/resources.html'
@@ -46,35 +54,3 @@ app.config(($routeProvider, $locationProvider) => {
     })
 
 })
-
-
-
-
-// firebase.auth().onAuthStateChanged(() => {
-//   if (firebase.auth().currentUser) {
-//     // logged in
-//     let email = firebase.auth().currentUser.email
-//     $('#signin-page').addClass('hide')
-//     $('#langing-page').removeClass('hide')
-//
-//     // $('.main-page h1').text(`Welcome ${email}`)
-//   } else {
-//     // logged out
-//     $('#signin-page').removeClass('hide')
-//     $('#langing-page').addClass('hide')
-//   }
-// })
-//
-// $('#signin-page form').submit((e) => {
-//   let email = $('input[type="email"]').val()
-//   let password = $('input[type="password"]').val()
-//
-//   firebase
-//     .auth()
-//     .signInWithEmailAndPassword(email, password)
-//     .then(() => $('form')[0].reset())
-//
-//   e.preventDefault()
-// })
-//
-// $('#signout-btn').click(() => firebase.auth().signOut())

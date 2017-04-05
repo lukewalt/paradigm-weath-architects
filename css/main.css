@@ -7,13 +7,21 @@ body > * {
   height: 700px;
 }
 
+.main-banner {
+  font-size: 5em;
+}
+
 h1 {
   font-weight: 600;
 }
 
+.header-cont {
+  margin: 9% 0;
+}
+
 .btm-banner {
 
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: #444;
 }
 
@@ -36,14 +44,19 @@ i {
   color: #006880;
 }
 
-.trifoldBlock > * {
-  color: #444;
+
+.trifoldBlock {
+  height: 400px;
+  padding: 3% 15%;
 }
 
-.trifoldBlock:hover {
-  transition: 2s;
-  box-shadow:0 0 20px rgba(0,0,0,0.3);
+.infoBlock-header {
+  font-weight: 600;
+}
 
+.trifoldBlock > * {
+  color: #444;
+  font-size: 2em;
 }
 
 .italix-banner {
@@ -74,9 +87,6 @@ i {
   padding: 1% 0;
 }
 
-.header-pad {
-  padding: 0 5%;
-}
 
 /*---------------------- MOBLE NAV ---------------------*/
 
@@ -220,22 +230,8 @@ i {
     top: 0;
   }
 
-  .maslow {
-    height: 200px;
-    float: none;
-    text-align: center;
-    margin: auto;
-  }
 }
 
-/*---------------------- ICONS ---------------------- */
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 /*---------------------- FOOTER ---------------------- */
 
@@ -254,4 +250,8 @@ footer.page-footer {
 .contact-nav {
   display: flex;
   justify-content: space-between;
+}
+
+.botm-marg {
+  margin-bottom: 7%;
 }
