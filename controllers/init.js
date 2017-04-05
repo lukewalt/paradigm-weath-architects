@@ -1,6 +1,8 @@
 var app = angular.module('pwa', ['ngRoute']);
 
 app.config(($routeProvider, $locationProvider) => {
+  $locationProvider.hashPrefix('');
+
 
   console.log('Config executing')
 
@@ -34,6 +36,10 @@ app.config(($routeProvider, $locationProvider) => {
     .when('/who', {
         controller: 'WhoCtrl',
         templateUrl: '/partials/who.html'
+    })
+    .when('/resources', {
+        controller: 'ResrCtrl',
+        templateUrl: '/partials/resources.html'
     })
     .otherwise({
         redirectTo: '/'
