@@ -1,7 +1,9 @@
 app.controller('MainCtrl', function ($scope, authFactory){
 
   $(".menu-collapsed").click(function() {
+
     $(this).toggleClass("menu-expanded");
+
   });
 
   $scope.doLogout = () => {
@@ -11,7 +13,7 @@ app.controller('MainCtrl', function ($scope, authFactory){
   $scope.hide = true;
 
   AOS.init({
-  duration: 1500,
+    duration: 1500,
   })
 
   $scope.doLogout = () => {

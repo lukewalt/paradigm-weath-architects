@@ -9,16 +9,33 @@ body > * {
   height: 700px;
 }
 
+a {
+  color: #fb8233;
+}
+
 .main-banner {
-  font-size: 4em;
+  font-size: 5em;
+  margin: 0;
+}
+
+.logo-case {
+  position: fixed;
+  margin: 15px;
+}
+
+.logo {
+  height: 40px;
+  margin: 3% 5%;
 }
 
 h1, h5 {
   font-weight: 600;
+  color: #444;
+
 }
 
 .header-cont {
-  margin: 9% 0;
+  margin-top: 15%;
 }
 
 .btm-banner {
@@ -26,7 +43,6 @@ h1, h5 {
   text-transform: lowercase;
   color: #444;
 }
-
 
 .parallax-container {
   min-height: 380px;
@@ -78,16 +94,18 @@ h1, h5 {
 
 /*---------------------- MOBLE NAV ---------------------*/
 
-
+.moble-nav {
+  margin-top: 5%;
+}
 
 .b-a, .bar, .bar:before, .bar:after {
   transition: all .25s;
   content: "";
   position: absolute;
-  left: 0;
+  right: 0;
   height: 6px;
   width: 30px;
-  border-radius: 15px;
+  border-radius: 1px;
   background-color: #fff;
 }
 
@@ -95,7 +113,7 @@ h1, h5 {
   transition: all .25s;
   position: fixed;
   top: 10px;
-  left: 9px;
+  right: 10px;
   height: 36px;
   width: 36px;
   z-index: 1;
@@ -123,14 +141,11 @@ h1, h5 {
   top: -0px;
 }
 
-.nav-opts {
-  margin-top: 10px;
-}
 
 .menu-expanded {
   transition: all .25s;
   text-align: center;
-  line-height: 4em;
+  line-height: 3em;
   height: 100%;
   width: 100%;
   border-radius: 0px;
