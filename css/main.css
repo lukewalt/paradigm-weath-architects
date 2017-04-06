@@ -217,6 +217,10 @@ h1, h5 {
   #index-banner .section {
     top: 0;
   }
+  .cprfoot {
+    font-size: .7em;
+    padding: 0 2.5%;
+  }
 
 }
 
@@ -229,6 +233,7 @@ footer.page-footer {
 
 .cprfoot {
   font-size: .7em;
+  padding: 0 2%;
 }
 .secondary-color {
   background-color: #444;
@@ -236,7 +241,7 @@ footer.page-footer {
 
 
 .foot-content {
-  margin-right: 2%;
+  font-size: .95em;
 }
 
 .footer-title {

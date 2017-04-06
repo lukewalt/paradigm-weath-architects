@@ -11,4 +11,9 @@ app.controller('LoginCtrl', function ($scope, $location, authFactory) {
       })
   }
 
+  $scope.doLogout = () => {
+    authFactory.logout()
+    .then(() => $location.path('/'))
+  }
+
 })

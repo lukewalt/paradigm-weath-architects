@@ -14,5 +14,10 @@ app.controller('MainCtrl', function ($scope, authFactory){
   duration: 1500,
   })
 
+  $scope.doLogout = () => {
+    authFactory.logout()
+    .then(() => $location.path('/'))
+  }
+
 
 })
