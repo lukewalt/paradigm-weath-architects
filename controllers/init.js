@@ -45,6 +45,10 @@ app.config(($routeProvider, $locationProvider) => {
         controller: 'MisVisCtrl',
         templateUrl: '/partials/vision.html'
     })
+    .when('/philosophies', {
+        controller: 'MisVisCtrl',
+        templateUrl: '/partials/philosophies.html'
+    })
     .when('/resources', {
         controller: 'ResrCtrl',
         templateUrl: '/partials/resources.html'
