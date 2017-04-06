@@ -1,8 +1,12 @@
-app.controller('MainCtrl', function ($scope){
+app.controller('MainCtrl', function ($scope, authFactory){
 
   $(".menu-collapsed").click(function() {
     $(this).toggleClass("menu-expanded");
   });
+
+  $scope.doLogout = () => {
+
+  }
 
   $scope.hide = true;
 

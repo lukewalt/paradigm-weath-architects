@@ -41,6 +41,7 @@ h1, h5 {
 .trifoldBlock {
   height: 400px;
   padding: 3% 15%;
+  text-align: center;
 }
 
 .infoBlock-header {
@@ -73,14 +74,6 @@ h1, h5 {
   margin-left: 7%;
 }
 
-.secondary-color {
-  background-color: #444;
-}
-
-.cprfoot {
-  background-color: #5e5e5e;
-  padding: 1% 0;
-}
 
 
 /*---------------------- MOBLE NAV ---------------------*/
@@ -234,16 +227,25 @@ footer.page-footer {
   margin: 0;
 }
 
+.cprfoot {
+  font-size: .7em;
+}
+.secondary-color {
+  background-color: #444;
+}
+
+
 .foot-content {
-  margin-top: 5%;
+  margin-right: 2%;
 }
 
 .footer-title {
   text-align: center;
 }
 
-.cprfoot {
+.footer-copyright {
   font-size: .7em;
+  padding: 0;
 }
 
 .contact-nav {
