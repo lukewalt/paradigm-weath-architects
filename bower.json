@@ -17,8 +17,8 @@
   "dependencies": {
     "materialize": "^0.98.0",
     "firebase": "^3.7.0",
-    "material-icons": "^0.1.0",
     "angular": "^1.6.3",
-    "angular-route": "^1.6.3"
+    "angular-route": "^1.6.3",
+    "aos": "^2.1.1"
   }
 }

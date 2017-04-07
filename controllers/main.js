@@ -1,13 +1,24 @@
-app.controller('MainCtrl', function ($scope, hexFactory){
+app.controller('MainCtrl', function ($scope, authFactory){
 
-  (function($){
-    $(function(){
+  $(".menu-collapsed").click(function() {
 
-      $('.button-collapse').sideNav();
-      $('.parallax').parallax();
+    $(this).toggleClass("menu-expanded");
 
-    }); // end of document ready
-  })(jQuery); // end of jQuery name space
+  });
 
+  $scope.doLogout = () => {
+
+  }
+
+  $scope.hide = true;
+
+  AOS.init({
+    duration: 1500,
+  })
+
+  $scope.doLogout = () => {
+    authFactory.logout()
+    .then(() => $location.path('/'))
+  }
 
 })

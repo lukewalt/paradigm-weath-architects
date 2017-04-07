@@ -27,6 +27,47 @@ p {
 
 .button-collapse {
   color: #006880;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+.main-header {
+  background: linear-gradient(orange, white);
+  height: 700px;
+}
+
+a {
+  color: #fb8233;
+}
+
+.main-banner {
+  font-size: 6em;
+  margin: 0;
+}
+
+.logo-case {
+  position: fixed;
+  margin: 15px;
+}
+
+.logo {
+  height: 40px;
+  margin: 3% 5%;
+}
+
+h1, h5 {
+  font-weight: 600;
+  color: #444;
+
+}
+
+.header-cont {
+  margin-top: 15%;
+}
+
+.btm-banner {
+  text-transform: lowercase;
+  color: #444;
 }
 
 .parallax-container {
@@ -39,74 +80,128 @@ p {
   width: 100%;
 }
 
-i {
-  color: #006880;
+
+.trifoldBlock {
+  height: 400px;
+  padding: 3% 15%;
+  text-align: center;
 }
 
-#canvas {
+.infoBlock-header {
+  font-weight: 600;
+}
+
+.trifoldBlock > * {
+  color: #444;
+  font-size: 2em;
+}
+
+.loginBtn {
+  background: linear-gradient(#014453, teal);
+  color: #fb8233;
+  font-weight: 600;
+  margin-bottom: 9%;
+}
+.loginBtn:hover {
+  background: linear-gradient(#014453, teal);
+  color: #fb8233;
+  font-weight: 600;
+  margin-bottom: 9%;
+  box-shadow: 0 15px 6px -6px #777;
+}
+
+
+/*---------------------- MOBLE NAV ---------------------*/
+
+.moble-nav {
+  margin-top: 5%;
+}
+
+.b-a, .bar, .bar:before, .bar:after {
+  transition: all .25s;
+  content: "";
   position: absolute;
+  right: 0;
+  height: 6px;
+  width: 30px;
+  border-radius: 1px;
+  background-color: #fff;
 }
 
-.tag-under {
+.menu-collapsed {
+  transition: all .25s;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer;
+}
+.menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: fixed;
+  margin: 2%;
+}
+.bar:before {
+  top: -8px;
+}
+.bar:after {
+  top: 8px;
+}
+
+.b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
+  transition: all .25s;
+  top: -0px;
+}
+
+
+.menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  line-height: 3em;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(teal, #014453);
+}
+.menu-expanded ul {
+  font-weight: 600;
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+.menu-expanded a {
+  transition: all .15s;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 5px;
+  color: #fff;
   display: block;
-  margin-top: 190px;
 }
-
-.nav-width {
-  width: 92%;
-}
-
-.italix-banner {
-  font-style: italic;
+.menu-expanded a:hover {
+  transition: all .15s;
+  letter-spacing: 1px;
   color: #fb8233;
 }
-
-.transp-sect {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  padding: 8%;
-
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s;
 }
-
-.maslow {
-  display: block;
-  float: right;
-  height: 400px;
-  margin-left: 7%;
+.menu-expanded .bar:before {
+  transform: rotate(45deg);
 }
-
-.secondary-color {
-  background-color: #444;
+.menu-expanded .bar:after {
+  transform: rotate(-45deg);
 }
-
-.cprfoot {
-  background-color: #5e5e5e;
-  padding: 1% 0;
-}
-
-.header-pad {
-  padding: 0 5%;
-}
-
-/*---------------------- SIDE NAV ---------------------*/
-
-
-.side-nav {
-  background-color: #fc8033;
-  text-align: center;
-  padding-top: 5%;
-}
-
-.side-nav a {
-  color: white;
-  font-size: 1.5em;
-
-}
-
-.side-nav a:hover {
-  background-color: white;
-}
-
 
 /*---------------------- LOGIN ---------------------*/
 
@@ -139,15 +234,8 @@ i {
   box-shadow: none;
 }
 
-/*-------------------- HIDE --------------------*/
-
-.hide {
-  visibility: none;
-}
-
 
 /*-------------------- MEDIA QUERIES --------------------*/
-
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -163,23 +251,13 @@ i {
   #index-banner .section {
     top: 0;
   }
-
-  .maslow {
-    height: 200px;
-    float: none;
-    text-align: center;
-    margin: auto;
+  .cprfoot {
+    font-size: .7em;
+    padding: 0 2.5%;
   }
+
 }
 
-/*---------------------- ICONS ---------------------- */
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 /*---------------------- FOOTER ---------------------- */
 
@@ -187,15 +265,33 @@ footer.page-footer {
   margin: 0;
 }
 
+.cprfoot {
+  font-size: .7em;
+  padding: 0 2%;
+}
+.secondary-color {
+  background-color: #444;
+}
+
+
 .foot-content {
-  margin-top: 5%;
+  font-size: .95em;
 }
 
 .footer-title {
   text-align: center;
 }
 
+.footer-copyright {
+  font-size: .7em;
+  padding: 0;
+}
+
 .contact-nav {
   display: flex;
   justify-content: space-between;
+}
+
+.botm-marg {
+  margin-bottom: 7%;
 }
