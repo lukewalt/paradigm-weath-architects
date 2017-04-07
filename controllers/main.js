@@ -1,4 +1,4 @@
-app.controller('MainCtrl', function ($scope, authFactory){
+app.controller('MainCtrl', function ($scope, $location, authFactory){
 
   $(".menu-collapsed").click(function() {
 
@@ -7,7 +7,10 @@ app.controller('MainCtrl', function ($scope, authFactory){
   });
 
   $scope.doLogout = () => {
-
+    authFactory.logout()
+    .then(() => {
+      $location.url('/')
+    })
   }
 
   $scope.hide = true;
