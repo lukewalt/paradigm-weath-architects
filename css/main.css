@@ -261,6 +261,9 @@ h1, h5 {
   #index-banner .section {
     top: 3%;
   }
+  .header-cont {
+    font-size: .9em;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -270,6 +273,9 @@ h1, h5 {
   .cprfoot {
     font-size: .7em;
     padding: 0 4%;
+  }
+  .header-cont {
+    font-size: .9em;
   }
 
 }
