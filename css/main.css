@@ -7,6 +7,11 @@ nav {
   color: #444;
 }
 
+#cli-sit li {
+  line-height: 2em;
+  list-style-type: square;
+}
+
 .brand-logo {
   height: 75px;
   margin: .5% 0;
@@ -61,7 +66,7 @@ a {
 }
 
 .logo {
-  height: 40px;
+  height: 43px;
   margin: 3% 5%;
 }
 
@@ -114,7 +119,7 @@ h1, h5 {
   margin-bottom: 9%;
 }
 .loginBtn:hover {
-  background: linear-gradient(#014453, teal);
+    background: linear-gradient(#014453, teal);
   color: #fb8233;
   font-weight: 600;
   margin-bottom: 9%;
@@ -264,7 +269,7 @@ h1, h5 {
   }
   .cprfoot {
     font-size: .7em;
-    padding: 0 2.5%;
+    padding: 0 4%;
   }
 
 }
@@ -278,7 +283,7 @@ footer.page-footer {
 
 .cprfoot {
   font-size: .7em;
-  padding: 0 2%;
+  padding: 1% 2%;
 }
 .secondary-color {
   background-color: #444;

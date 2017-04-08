@@ -14,12 +14,6 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
   }
 
 
-  AOS.init({
-    duration: 1500,
-  })
-
-
-
   $scope.doLogout = () => {
     authFactory.logout()
     .then(() => $location.path('/'))
