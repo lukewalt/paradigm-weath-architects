@@ -29,18 +29,10 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
-<<<<<<< HEAD
-=======
-
->>>>>>> 4f536409d8a804410afa75a12e54ce73dda2e6dc
 shapes
 spinning-cube
 swing
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 4f536409d8a804410afa75a12e54ce73dda2e6dc
 
 # Optional npm cache directory
 .npm

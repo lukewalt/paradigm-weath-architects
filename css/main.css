@@ -40,6 +40,16 @@ a {
   color: #fb8233;
 }
 
+.next {
+  font-size: 25px;  
+  position: absolute;
+  top: 57px;
+  right: 17%;
+  z-index: 1;
+  cursor: pointer;
+  line-height:
+}
+
 .main-banner {
   font-size: 6em;
   margin: 0;
@@ -58,7 +68,7 @@ a {
 h1, h5 {
   font-weight: 600;
   color: #444;
-
+  margin-top: 4%;
 }
 
 .header-cont {
@@ -93,7 +103,8 @@ h1, h5 {
 
 .trifoldBlock > * {
   color: #444;
-  font-size: 2em;
+  font-size: 3em;
+  line-height: 1.1em;
 }
 
 .loginBtn {
