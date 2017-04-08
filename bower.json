@@ -19,6 +19,7 @@
     "firebase": "^3.7.0",
     "angular": "^1.6.3",
     "angular-route": "^1.6.3",
-    "aos": "^2.1.1"
+    "aos": "^2.1.1",
+    "angular-scroll-animate": "^0.9.9"
   }
 }
