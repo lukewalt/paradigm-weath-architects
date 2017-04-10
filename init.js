@@ -18,39 +18,39 @@ app.config(($routeProvider, $locationProvider) => {
   $routeProvider
     .when('/', {
         controller: 'LoginCtrl',
-        templateUrl: '/partials/login.html'
+        templateUrl: 'partials/login.html'
     })
     .when('/home', {
         controller: 'MainCtrl',
-        templateUrl: '/partials/main.html'
+        templateUrl: 'partials/main.html'
     })
     .when('/why', {
         controller: 'WhyCtrl',
-        templateUrl: '/partials/why.html'
+        templateUrl: 'partials/why.html'
     })
     .when('/how', {
         controller: 'HowCtrl',
-        templateUrl: '/partials/how.html'
+        templateUrl: 'partials/how.html'
     })
     .when('/who', {
         controller: 'WhoCtrl',
-        templateUrl: '/partials/who.html'
+        templateUrl: 'partials/who.html'
     })
     .when('/mission', {
         controller: 'MisVisCtrl',
-        templateUrl: '/partials/mission.html'
+        templateUrl: 'partials/mission.html'
     })
     .when('/vision', {
         controller: 'MisVisCtrl',
-        templateUrl: '/partials/vision.html'
+        templateUrl: 'partials/vision.html'
     })
     .when('/philosophy', {
         controller: 'MisVisCtrl',
-        templateUrl: '/partials/philosophy.html'
+        templateUrl: 'partials/philosophy.html'
     })
     .when('/resources', {
         controller: 'ResrCtrl',
-        templateUrl: '/partials/resources.html'
+        templateUrl: 'partials/resources.html'
     })
     .otherwise({
         redirectTo: '/'
