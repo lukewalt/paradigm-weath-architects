@@ -18,11 +18,11 @@ app.config(($routeProvider, $locationProvider) => {
   $routeProvider
     .when('/', {
         controller: 'LoginCtrl',
-        templateUrl: 'partials/login.html'
+        templateUrl: '/partials/login.html'
     })
     .when('/home', {
         controller: 'MainCtrl',
-        templateUrl: 'partials/main.html'
+        templateUrl: '/partials/main.html'
     })
     .when('/why', {
         controller: 'WhyCtrl',
