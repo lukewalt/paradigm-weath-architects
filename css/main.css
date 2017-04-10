@@ -114,7 +114,8 @@ h1, h5 {
 
 .loginBtn {
   background: linear-gradient(#014453, teal);
-  color: #fb8233;
+  color: #fff;
+  font-size: 1.4em;
   font-weight: 600;
   margin-bottom: 9%;
 }
@@ -123,7 +124,7 @@ h1, h5 {
   color: #fb8233;
   font-weight: 600;
   margin-bottom: 9%;
-  box-shadow: 0 15px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 
