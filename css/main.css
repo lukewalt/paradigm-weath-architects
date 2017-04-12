@@ -30,12 +30,6 @@ p {
 }
 
 
-.button-collapse {
-  color: #006880;
-  font-size: 1.3em;
-  line-height: 2em;
-}
-
 .main-header {
   background: linear-gradient(orange, white);
   height: 700px;
@@ -44,7 +38,7 @@ p {
 a {
   color: #fb8233;
 }
-
+/*
 .next {
   font-size: 25px;
   position: absolute;
@@ -53,7 +47,7 @@ a {
   z-index: 1;
   cursor: pointer;
   line-height:
-}
+}*/
 
 .main-banner {
   font-size: 6em;
@@ -70,7 +64,7 @@ a {
   margin: 3% 5%;
 }
 
-h1, h5 {
+h1 {
   font-weight: 600;
   color: #444;
   margin-top: 4%;
@@ -85,42 +79,45 @@ h1, h5 {
   color: #444;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  color: rgba(255,255,255,.9);
-}
-
-.parallax-container .section {
-  width: 100%;
-}
-
+/*---------------------- CARDS ---------------------*/
 
 .trifoldBlock {
-  height: 400px;
+  height: 350px;
   padding: 3% 15%;
-  text-align: center;
 }
+
+.trifoldBlock > * {
+  color: #444;
+  font-size: 2em;
+  line-height: 1.1em;
+}
+
 
 .infoBlock-header {
   font-weight: 600;
 }
 
-.trifoldBlock > * {
-  color: #444;
-  font-size: 3em;
-  line-height: 1.1em;
+.click-me-font {
+  font-weight: 600;
+  margin: 15%;
 }
 
+.icon {
+  height: 200px;
+}
+
+/*---------------------- LOGIN ---------------------*/
+
+
 .loginBtn {
-  background: linear-gradient(#014453, teal);
+  background: linear-gradient(#014453, #008686);
   color: #fff;
   font-size: 1.4em;
   font-weight: 600;
   margin-bottom: 9%;
 }
 .loginBtn:hover {
-    background: linear-gradient(#014453, teal);
+    background: linear-gradient(#014453, #008686);
   color: #fb8233;
   font-weight: 600;
   margin-bottom: 9%;
@@ -181,7 +178,7 @@ h1, h5 {
 .menu-expanded {
   transition: all .25s;
   text-align: center;
-  line-height: 3em;
+  line-height: 3.5em;
   height: 100%;
   width: 100%;
   border-radius: 0px;
@@ -190,16 +187,16 @@ h1, h5 {
   background: linear-gradient(teal, #014453);
 }
 .menu-expanded ul {
-  font-weight: 600;
   transition: all 0s;
   position: relative;
   left: 0;
   z-index: 2;
 }
 .menu-expanded a {
+  font-weight: 600;
   transition: all .15s;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 3em;
   padding: 5px;
   color: #fff;
   display: block;
@@ -252,51 +249,44 @@ h1, h5 {
 }
 
 
-/*-------------------- MEDIA QUERIES --------------------*/
+/*---------------------- PAGES ---------------------- */
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 5%;
-  }
-  #index-banner .section {
-    top: 3%;
-  }
-  .header-cont {
-    font-size: .9em;
-  }
+.quote {
+  padding: 5% 0;
+  margin: 5% 0;
+  background: linear-gradient(#014453, #008686);
+  font-style: italic;
+  color: white;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-  .cprfoot {
-    font-size: .7em;
-    padding: 0 4%;
-  }
-  .header-cont {
-    font-size: .9em;
-  }
-
+.next {
+  display: inline-block;
+  margin: 2%;
 }
+.back {
+  display: inline-block;
+  margin: 2%;
+}
+
+
 
 
 /*---------------------- FOOTER ---------------------- */
 
-footer.page-footer {
-  margin: 0;
+
+.secondary-color {
+  padding-top: 5%;
+  background-color: #444;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
 }
 
 .cprfoot {
-  font-size: .7em;
-  padding: 1% 2%;
+  margin: 0;
+  font-size: .9em;
+  bottom: 0;
 }
-.secondary-color {
-  background-color: #444;
-}
-
-
 .foot-content {
   font-size: .95em;
 }
@@ -317,4 +307,30 @@ footer.page-footer {
 
 .botm-marg {
   margin-bottom: 7%;
+}
+
+
+/*-------------------- MEDIA QUERIES --------------------*/
+
+@media only screen and (max-width : 992px) {
+  .main-header {
+    heigh: 100%;
+  }
+  #index-banner {
+    top: 3%;
+  }
+  .header-cont {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .main-header {
+    top: 0;
+  }
+
+  .header-cont {
+    font-size: .9em;
+  }
+
 }
