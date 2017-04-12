@@ -38,7 +38,7 @@ p {
 a {
   color: #fb8233;
 }
-
+/*
 .next {
   font-size: 25px;
   position: absolute;
@@ -47,7 +47,7 @@ a {
   z-index: 1;
   cursor: pointer;
   line-height:
-}
+}*/
 
 .main-banner {
   font-size: 6em;
@@ -64,7 +64,7 @@ a {
   margin: 3% 5%;
 }
 
-h1, h5 {
+h1 {
   font-weight: 600;
   color: #444;
   margin-top: 4%;
@@ -247,6 +247,28 @@ h1, h5 {
   border-bottom: 2px solid #fb8233;
   box-shadow: none;
 }
+
+
+/*---------------------- PAGES ---------------------- */
+
+.quote {
+  padding: 5% 0;
+  margin: 5% 0;
+  background: linear-gradient(#014453, #008686);
+  font-style: italic;
+  color: white;
+}
+
+.next {
+  display: inline-block;
+  margin: 2%;
+}
+.back {
+  display: inline-block;
+  margin: 2%;
+}
+
+
 
 
 /*---------------------- FOOTER ---------------------- */
