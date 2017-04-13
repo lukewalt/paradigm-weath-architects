@@ -1,5 +1,6 @@
 body > * {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
 }
 
 nav ul a,
@@ -26,7 +27,8 @@ nav ul a:hover {
 }
 
 p {
-  line-height: 2rem;
+  font-weight: 200;
+  line-height: 1.7em;
 }
 
 
@@ -116,8 +118,9 @@ h1 {
   font-weight: 600;
   margin-bottom: 9%;
 }
+
 .loginBtn:hover {
-    background: linear-gradient(#014453, #008686);
+  background: linear-gradient(#014453, #008686);
   color: #fb8233;
   font-weight: 600;
   margin-bottom: 9%;
@@ -127,7 +130,8 @@ h1 {
 
 /*---------------------- MOBLE NAV ---------------------*/
 
-.moble-nav {
+
+.header-top {
   margin-top: 5%;
 }
 
@@ -251,12 +255,29 @@ h1 {
 
 /*---------------------- PAGES ---------------------- */
 
-.quote {
-  padding: 5% 0;
-  margin: 5% 0;
+.temp-header {
+  margin-top: 0;
+  color: #fff;
+}
+
+.sub-header {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.blue-gradient {
+  padding-top: 5%;
   background: linear-gradient(#014453, #008686);
+  color: #fff;
+}
+
+.quote {
+  font-family: 'Neuton', serif;
+  padding: 3% 8%;
   font-style: italic;
-  color: white;
+  color: #fb8233;
+  line-height: 1.3em;
+  letter-spacing: 2px;
 }
 
 .next {
@@ -267,8 +288,6 @@ h1 {
   display: inline-block;
   margin: 2%;
 }
-
-
 
 
 /*---------------------- FOOTER ---------------------- */
