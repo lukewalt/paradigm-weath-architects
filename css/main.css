@@ -3,10 +3,6 @@ body > * {
   font-size: 2em;
 }
 
-nav ul a,
-nav {
-  color: #444;
-}
 
 #cli-sit li {
   line-height: 2em;
@@ -52,7 +48,7 @@ a {
 }*/
 
 .main-banner {
-  font-size: 6em;
+  font-size: 4em;
   margin: 0;
 }
 
@@ -70,6 +66,10 @@ h1 {
   font-weight: 600;
   color: #444;
   margin-top: 4%;
+}
+
+h4 {
+  letter-spacing: 4px;
 }
 
 .header-cont {
@@ -90,7 +90,7 @@ h1 {
 
 .trifoldBlock > * {
   color: #444;
-  font-size: 2em;
+  /*font-size: 2em;*/
   line-height: 1.1em;
 }
 
@@ -114,7 +114,7 @@ h1 {
 .loginBtn {
   background: linear-gradient(#014453, #008686);
   color: #fff;
-  font-size: 1.4em;
+  font-size: .9em;
   font-weight: 600;
   margin-bottom: 9%;
 }
@@ -124,7 +124,7 @@ h1 {
   color: #fb8233;
   font-weight: 600;
   margin-bottom: 9%;
-  box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 11px 6px -6px #777;
 }
 
 
@@ -132,7 +132,7 @@ h1 {
 
 
 .header-top {
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .b-a, .bar, .bar:before, .bar:after {
@@ -294,20 +294,28 @@ h1 {
 
 
 .secondary-color {
-  padding-top: 5%;
+  padding-top: 20px;
   background-color: #444;
+  color: #fff;
   bottom: 0;
   height: 200px;
   width: 100%;
 }
 
+
 .cprfoot {
   margin: 0;
-  font-size: .9em;
+  font-size: 15px;
   bottom: 0;
 }
+
 .foot-content {
-  font-size: .95em;
+  font-size: 20px;
+  color: white;
+
+}
+.foot-content li:hover {
+  font-weight: 600;
 }
 
 .footer-title {
@@ -315,7 +323,7 @@ h1 {
 }
 
 .footer-copyright {
-  font-size: .7em;
+  font-size: 15px;
   padding: 0;
 }
 
