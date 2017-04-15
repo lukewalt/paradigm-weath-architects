@@ -52,7 +52,7 @@ a {
 .main-banner {
   font-size: 5em;
   margin: 0;
-  font-weight: 600;
+  font-weight: 900;
   color: #444;
 }
 
@@ -268,7 +268,7 @@ h4 {
 .temp-header {
   margin: 0;
   color: #fff;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 5em;
 }
 
@@ -411,7 +411,7 @@ h4 {
   .pymd-img {
     float: left;
     margin: 5% 12%;
-    height: 500px;
+    height: 400px;
   }
 }
 
@@ -422,6 +422,12 @@ h4 {
 
   .header-cont {
     font-size: .9em;
+  }
+
+  .pymd-img {
+    float: left;
+    margin: 5% 12%;
+    height: 300px;
   }
 
 }
