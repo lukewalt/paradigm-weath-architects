@@ -50,8 +50,10 @@ a {
 }*/
 
 .main-banner {
-  font-size: 4em;
+  font-size: 5em;
   margin: 0;
+  font-weight: 600;
+  color: #444;
 }
 
 .logo-case {
@@ -60,13 +62,11 @@ a {
 }
 
 .logo {
-  height: 43px;
+  height: 50px;
   margin: 3% 5%;
 }
 
 h1 {
-  font-weight: 600;
-  color: #444;
   margin-top: 4%;
 }
 
@@ -194,17 +194,20 @@ h4 {
 }
 
 .menu-expanded ul {
+  margin-top: 4%;
   transition: all 0s;
   position: relative;
   left: 0;
   z-index: 2;
 }
 
+
+
 .menu-expanded a {
   font-weight: 600;
   transition: all .15s;
   text-decoration: none;
-  font-size: 3em;
+  font-size: 2em;
   padding: 5px;
   color: #fff;
   display: block;
@@ -263,8 +266,10 @@ h4 {
 /*---------------------- PAGES ---------------------- */
 
 .temp-header {
-  margin-top: 0;
+  margin: 0;
   color: #fff;
+  font-weight: 600;
+  font-size: 5em;
 }
 
 .sub-header {
@@ -283,9 +288,9 @@ h4 {
 
 .quote {
   font-family: 'Neuton', serif;
-  padding: 3% 8%;
   font-style: italic;
   color: #fb8233;
+  padding: 3% 8%;
   line-height: 1.3em;
   letter-spacing: 2px;
 }
@@ -327,6 +332,21 @@ h4 {
 
 .icon-two {
   height: 50px;
+}
+
+.maslow {
+  border:
+  min-height: 500px;
+  margin: 8% 0;
+  padding: 5% 8% 4%;
+  background: linear-gradient(#fb8233, #fff);
+  color: #444;
+}
+
+.pymd-img {
+  float: left;
+  margin: 5% 6% 6% 0;
+  height: 500px;
 }
 
 
@@ -375,6 +395,8 @@ h4 {
 
 /*-------------------- MEDIA QUERIES --------------------*/
 
+
+
 @media only screen and (max-width : 992px) {
   .main-header {
     heigh: 100%;
@@ -384,6 +406,12 @@ h4 {
   }
   .header-cont {
     font-size: .9em;
+  }
+
+  .pymd-img {
+    float: left;
+    margin: 5% 12%;
+    height: 500px;
   }
 }
 
