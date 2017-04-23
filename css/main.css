@@ -335,12 +335,13 @@ h4 {
 }
 
 .maslow {
-  border:
+  border-top: 2px solid #fff:
   min-height: 500px;
   margin: 8% 0;
   padding: 5% 8% 4%;
-  background: linear-gradient(#fb8233, #fff);
+  background: linear-gradient(#fb8233, #f3ae81);
   color: #444;
+
 }
 
 .pymd-img {
