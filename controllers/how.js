@@ -5,9 +5,10 @@ app.controller('HowCtrl', function($scope, $location, authFactory){
 
   $(".menu-collapsed").click(function() {
 
-    $(this).toggleClass("menu-expanded");
+    $(this).toggleClass("menu-expanded-inv");
 
   });
+
 
   $scope.doLogout = () => {
     authFactory.logout()

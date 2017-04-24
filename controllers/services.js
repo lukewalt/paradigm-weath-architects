@@ -10,4 +10,10 @@ app.controller('ServCtrl', function($scope, $location ,authFactory){
     .then(() => $location.path('/'))
   }
 
+  $(".menu-collapsed").click(function() {
+
+    $(this).toggleClass("menu-expanded-inv");
+
+  });
+
 })

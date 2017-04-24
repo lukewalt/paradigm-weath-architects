@@ -188,6 +188,10 @@ h1 {
   transition: all .25s;
   top: -0px;
 }
+.b-a-expanded-inv, .menu-expanded-inv .bar:before, .menu-expanded-inv .bar:after {
+  transition: all .25s;
+  top: -0px;
+}
 
 .menu-expanded {
   transition: all .25s;
@@ -201,7 +205,26 @@ h1 {
   background: linear-gradient(teal, #014453);
 }
 
+.menu-expanded-inv {
+  transition: all .25s;
+  text-align: center;
+  line-height: 3.5em;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
 .menu-expanded ul {
+  margin-top: 4%;
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+.menu-expanded-inv ul {
   margin-top: 4%;
   transition: all 0s;
   position: relative;
@@ -221,10 +244,25 @@ h1 {
   display: block;
 }
 
+.menu-expanded-inv a {
+  font-weight: 600;
+  transition: all .15s;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 5px;
+  color: #fb8233;
+  display: block;
+}
+
 .menu-expanded a:hover {
   transition: all .15s;
   letter-spacing: 1px;
   color: #fb8233;
+}
+.menu-expanded-inv a:hover {
+  transition: all .15s;
+  letter-spacing: 1px;
+  color: #ffb687;
 }
 
 .menu-expanded .bar {
@@ -237,6 +275,19 @@ h1 {
 }
 
 .menu-expanded .bar:after {
+  transform: rotate(-45deg);
+}
+
+.menu-expanded-inv .bar {
+  background-color: transparent;
+  transition: all .25s;
+}
+
+.menu-expanded-inv .bar:before {
+  transform: rotate(45deg);
+}
+
+.menu-expanded-inv .bar:after {
   transform: rotate(-45deg);
 }
 
@@ -369,7 +420,7 @@ h1 {
 /*---------------------- FOOTER ---------------------- */
 
 .secondary-color {
-  padding-top: 20px;
+  padding: 20px 0 10px 10px;
   background-color: #c9c9c9;
   bottom: 0;
   height: 200px;
@@ -377,7 +428,6 @@ h1 {
 }
 
 .cprfoot {
-  margin-left: 2%;
   font-size: 15px;
   bottom: 0;
 }

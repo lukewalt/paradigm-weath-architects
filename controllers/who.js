@@ -5,6 +5,12 @@ app.controller('WhoCtrl', function($scope, $location ,authFactory){
     duration: 1100
   })
 
+  $(".menu-collapsed").click(function() {
+
+    $(this).toggleClass("menu-expanded-inv");
+
+  });
+
 
   $scope.doLogout = () => {
     authFactory.logout()
