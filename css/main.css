@@ -88,7 +88,7 @@ h1 {
 /*---------------------- CARDS ---------------------*/
 
 .trifoldBlock {
-  height: 350px;
+  min-height: 350px;
   padding: 10% 15%;
 }
 
@@ -467,6 +467,9 @@ h1 {
   .main-header {
     heigh: 100%;
   }
+  .temp-header {
+    font-size: 4.5em;
+  }
   #index-banner {
     top: 3%;
   }
@@ -482,14 +485,24 @@ h1 {
 }
 
 @media only screen and (max-width : 600px) {
-  .main-header {
-    top: 0;
+  .main-banner {
+    font-size: 4em;
+    margin-top: 25%;
+  }
+  .temp-header {
+    font-size: 3.5em;
   }
 
   .header-cont {
     font-size: .9em;
   }
 
+  .trifoldBlock {
+    text-align: center;
+  }
+  .row .col {
+    float: none;
+  }
   .pymd-img {
     float: left;
     margin: 5% 12%;
