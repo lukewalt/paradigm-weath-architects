@@ -5,6 +5,7 @@ app.config(($routeProvider, $locationProvider) => {
   // $locationProvider.hashPrefix('');
   console.log('Config executing')
 
+
   // FIREBASE AUTH
   firebase.initializeApp({
     apiKey: "AIzaSyC9Ue2Xwe2AXdy1GIjvuPhiiKlMAcr2gFQ",

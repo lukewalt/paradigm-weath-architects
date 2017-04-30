@@ -32,13 +32,24 @@ p {
 
 
 .main-header {
+  width:100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background:
     linear-gradient(to bottom, rgba(248, 141, 2, 0.8), rgba(255,255,225,0.8)),
     url("http://payload205.cargocollective.com/1/13/427185/6416057/seagullmountaindesign.jpg") no-repeat center center fixed;;
   background-color: linear-gradient(orange, white);
   background-size: cover;
-  height: 900px;
 }
+
 
 a {
   color: #fb8233;
@@ -87,9 +98,14 @@ h1 {
 
 /*---------------------- CARDS ---------------------*/
 
+.infoBlocks {
+  padding: 10%;
+  margin-bottom: 5%;
+}
 .trifoldBlock {
-  min-height: 350px;
-  padding: 10% 15%;
+  /*min-height: 350px;*/
+  padding: 3%;
+
 }
 
 .trifoldBlock > * {
@@ -97,6 +113,8 @@ h1 {
   /*font-size: 2em;*/
   line-height: 1.1em;
 }
+
+
 
 .infoBlock-header {
   font-weight: 600;
@@ -111,10 +129,7 @@ h1 {
   height: 200px;
 }
 
-.readmore {
-  margin: 2% 0 10%;
-  font-weight: 600;
-}
+
 
 /*---------------------- LOGIN ---------------------*/
 
@@ -291,6 +306,8 @@ h1 {
   transform: rotate(-45deg);
 }
 
+
+
 /*---------------------- LOGIN ---------------------*/
 
 .login-cont{
@@ -359,6 +376,7 @@ h1 {
   padding: 3% 8%;
   line-height: 1.3em;
   letter-spacing: 2px;
+  font-size: 1.3em;
 }
 
 .next {
@@ -420,11 +438,15 @@ h1 {
 /*---------------------- FOOTER ---------------------- */
 
 .secondary-color {
-  padding: 20px 0 10px 10px;
+  display: block;
+  /*padding: 20px 0 10px 10px;*/
   background-color: #c9c9c9;
+  min-height: 200px;
+  /*position: absolute;*/
+  right: 0;
   bottom: 0;
-  height: 200px;
-  width: 100%;
+  left: 0;
+  padding: 1rem;
 }
 
 .cprfoot {
@@ -499,6 +521,7 @@ h1 {
 
   .trifoldBlock {
     text-align: center;
+    border-bottom: 5px solid grey;
   }
   .row .col {
     float: none;

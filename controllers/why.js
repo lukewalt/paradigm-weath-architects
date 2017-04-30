@@ -7,6 +7,7 @@ app.controller('WhyCtrl', function($scope){
 
   });
 
+
   AOS.init({
     duration: 1100
   })

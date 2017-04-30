@@ -18,5 +18,10 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
   })
 
 
+  let vph = $(window).height();
+
+  $('.main-header').height(vph)
+
+
 
 })
