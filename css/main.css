@@ -420,6 +420,7 @@ h1 {
 
 .maslow {
   border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   min-height: 500px;
   margin: 8% 0;
   padding: 5% 8% 4%;
