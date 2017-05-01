@@ -92,7 +92,9 @@ h1 {
 }
 
 .btm-banner {
-  text-transform: lowercase;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
   color: #444;
 }
 
@@ -481,6 +483,23 @@ h1 {
 .botm-marg {
   margin-bottom: 7%;
 }
+
+
+.tricker {
+  height: 50px;
+  overflow: hidden;
+  margin: 0 auto ;
+}
+.tricker h5 {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: margin-top 1s ease;
+}
+
 
 /*-------------------- MEDIA QUERIES --------------------*/
 
