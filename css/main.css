@@ -5,7 +5,7 @@ body > * {
 
 
 #cli-sit li {
-  font-size: .7em;
+  font-size: .8em;
   list-style-type: square;
   line-height: 1.4em;
   margin: 10% 0;
@@ -44,8 +44,8 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
   background:
-    linear-gradient(to bottom, rgba(248, 141, 2, 0.8), rgba(255,255,225,0.8)),
-    url("http://payload205.cargocollective.com/1/13/427185/6416057/seagullmountaindesign.jpg") no-repeat center center fixed;;
+    linear-gradient(to bottom, rgba(1, 68, 83, .8), rgba(0, 134, 134, .8)),
+    url("/img/skyout.jpg") no-repeat center center fixed;;
   background-color: linear-gradient(orange, white);
   background-size: cover;
 }
@@ -65,20 +65,23 @@ a {
   line-height:
 }*/
 
+
+
+
 .main-banner {
   font-size: 5em;
   margin: 0;
   font-weight: 900;
   color: #fff;
+  letter-spacing: -5px;
 }
 
 .logo-case {
-  position: fixed;
-  margin: 15px;
+  align-self: flex-start;
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   margin: 3% 5%;
 }
 
@@ -167,7 +170,7 @@ h1 {
   height: 6px;
   width: 30px;
   border-radius: 1px;
-  background-color: #767676;
+  background-color: #fff;
 }
 
 .menu-collapsed {
@@ -400,13 +403,13 @@ h1 {
   width: 100%;
   padding: 1%;
   border: none;
-  background: linear-gradient(#014453, #008686);
+  background-color: #008686;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
 }
 .btn-two:hover {
-  box-shadow: 0 11px 6px -6px #777;
+  box-shadow: 0 11px 6px -6px rgba(119, 119, 119, 0.71);
   color: #fb8233;
 }
 
@@ -436,6 +439,12 @@ h1 {
   margin: 5% 6% 6% 0;
   height: 500px;
 }
+
+#client-stack-one,
+#client-stack-two {
+  padding: 0 2rem;
+}
+
 
 
 /*---------------------- FOOTER ---------------------- */
@@ -496,8 +505,10 @@ h1 {
   line-height: 50px;
   font-size: 40px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
   transition: margin-top 1s ease;
+  color: #fb8233;
+  font-weight: bold;
 }
 
 
