@@ -2,7 +2,7 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
 
   $(".menu-collapsed").click(function() {
 
-    $(this).toggleClass("menu-expanded");
+    $(this).toggleClass("menu-expanded-inv");
 
   });
 

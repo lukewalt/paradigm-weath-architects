@@ -44,9 +44,8 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
   background:
-    linear-gradient(to bottom, rgba(1, 68, 83, .8), rgba(0, 134, 134, .8)),
-    url("/img/skyout.jpg") no-repeat center center fixed;;
-  background-color: linear-gradient(orange, white);
+    linear-gradient(to bottom, rgba(1, 68, 83, 1), rgba(0, 134, 134, .8)),
+    url("/img/skyout.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -73,7 +72,7 @@ a {
   margin: 0;
   font-weight: 900;
   color: #fff;
-  letter-spacing: -5px;
+  letter-spacing: -6px;
 }
 
 .logo-case {
@@ -90,39 +89,76 @@ h1 {
 }
 
 
-.header-cont {
-  margin-top: 15%;
-}
 
 .btm-banner {
   text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #444;
 }
 
-/*---------------------- CARDS ---------------------*/
+
+
+/*---------------------- MAIN PAGE ---------------------*/
+
+.row {
+  margin: 0;
+  padding: 5%,
+}
 
 .infoBlocks {
-  padding: 10%;
-  margin-bottom: 5%;
-}
-.trifoldBlock {
-  /*min-height: 350px;*/
-  padding: 3%;
-
 }
 
-.trifoldBlock > * {
+
+.trifoldBlock * {
   color: #444;
-  /*font-size: 2em;*/
   line-height: 1.1em;
+  letter-spacing: .5px;
 }
-
-
 
 .infoBlock-header {
-  font-weight: 600;
+  /*font-weight: 900;*/
+  text-align: center;
+  /*letter-spacing: -3px;*/
+  text-transform: uppercase;
+}
+
+.icon-sect {
+  height: 75vh;
+  display: flex;
+}
+
+.mission-sect {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.73), rgba(255, 255, 255, 1)),
+    url("../img/mission.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.vision-sect  {
+  background:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)),
+    url("../img/stars.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.phil-sect {
+  background:
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.73), rgba(255, 255, 255, 1)),
+    url("../img/blueprint.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+.icon {
+  height: 33vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sect-block {
+  padding: 2% 10%;
+  line-height: 1.2em;
+  font-weight: 900;
 }
 
 .click-me-font {
@@ -130,11 +166,23 @@ h1 {
   margin: 15%;
 }
 
-.icon {
-  height: 200px;
+
+#services_table {
+  height: 100vh;
+  margin-bottom: 10% ;
+
 }
 
-
+.go-to-contact{
+  width: 33%;
+  margin-top: 5%;
+  padding: 2% 0;
+  border: none;
+  background-color: #fb8233;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 /*---------------------- LOGIN ---------------------*/
 
@@ -155,6 +203,37 @@ h1 {
 }
 
 
+.login-cont{
+  display: inline-block;
+  padding: 32px 48px 0px 48px;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+#login-btn {
+  background-color: #fb8233;
+  margin-bottom: 15px;
+}
+
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: #fb8233;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #fb8233;
+  box-shadow: none;
+}
+
+
+
+
 /*---------------------- MOBLE NAV ---------------------*/
 
 
@@ -170,7 +249,7 @@ h1 {
   height: 6px;
   width: 30px;
   border-radius: 1px;
-  background-color: #fff;
+  background-color: #fb8233;
 }
 
 .menu-collapsed {
@@ -313,38 +392,23 @@ h1 {
 
 
 
-/*---------------------- LOGIN ---------------------*/
-
-.login-cont{
-  display: inline-block;
-  padding: 32px 48px 0px 48px;
-  border: 1px solid #EEE;
-  border-radius: 5px;
-  background-color: #fafafa;
-}
-
-#login-btn {
-  background-color: #fb8233;
-  margin-bottom: 15px;
-}
-
-.input-field input[type=date]:focus + label,
-.input-field input[type=text]:focus + label,
-.input-field input[type=email]:focus + label,
-.input-field input[type=password]:focus + label {
-  color: #fb8233;
-}
-
-.input-field input[type=date]:focus,
-.input-field input[type=text]:focus,
-.input-field input[type=email]:focus,
-.input-field input[type=password]:focus {
-  border-bottom: 2px solid #fb8233;
-  box-shadow: none;
-}
-
-
 /*---------------------- PAGES ---------------------- */
+
+.stripe {
+  height: 33vh;
+  width: 100%;
+  background-color: #008686;
+  margin: 0 ;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10%;
+}
+
+.stripe-logo {
+  height: 10vh;
+  margin-right: 2%;
+}
 
 .temp-header {
   margin: 0;
@@ -395,7 +459,7 @@ h1 {
 }
 
 .questions {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
   color: #444;
 }
 
@@ -411,6 +475,23 @@ h1 {
 .btn-two:hover {
   box-shadow: 0 11px 6px -6px rgba(119, 119, 119, 0.71);
   color: #fb8233;
+}
+
+.btn-three {
+  width: 100%;
+  margin-top: 5%;
+  padding: 3% 0;
+  border: none;
+  background-color: #fb8233;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-three:hover {
+  box-shadow: 0 11px 6px -6px rgba(119, 119, 119, 0.71);
+  background-color: ;
+
 }
 
 .service-pref {
@@ -494,7 +575,7 @@ h1 {
 }
 
 
-.tricker {
+/*.tricker {
   height: 50px;
   overflow: hidden;
   margin: 0 auto ;
@@ -509,7 +590,7 @@ h1 {
   transition: margin-top 1s ease;
   color: #fb8233;
   font-weight: bold;
-}
+}*/
 
 
 /*-------------------- MEDIA QUERIES --------------------*/
@@ -552,7 +633,6 @@ h1 {
 
   .trifoldBlock {
     text-align: center;
-    border-bottom: 5px solid grey;
   }
   .row .col {
     float: none;
