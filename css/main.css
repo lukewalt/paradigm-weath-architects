@@ -97,9 +97,6 @@ h1 {
   padding: 5%,
 }
 
-.infoBlocks {
-}
-
 
 .trifoldBlock * {
   color: #444;
@@ -176,6 +173,13 @@ h1 {
   text-transform: uppercase;
 }
 
+.explore_site {
+  color: #444;
+  text-transform: uppercase;
+  height: 100vh;
+  justify-content: center;
+}
+
 /*---------------------- LOGIN ---------------------*/
 
 .loginBtn {
@@ -225,11 +229,18 @@ h1 {
 
 
 #contact-field {
- background: linear-gradient(#fb8233, #ffab59);
- padding: 10% 0;
- margin-top: 10%;
- color: #fff;
- border-top: 1px solid teal;
+  height: 100vh;
+  background: linear-gradient(#fb8233, #ffab59);
+  padding: 10% 0;
+  margin-top: 10%;
+  color: #fff;
+  border-top: 1px solid teal;
+
+}
+
+.form-btn {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*---------------------- MOBLE NAV ---------------------*/
@@ -545,9 +556,16 @@ h1 {
   bottom: 0;
 }
 
+
+.footer-nav li a {
+  /*padding: 0;*/
+}
+
 .foot-content {
   font-size: 20px;
   color: #444;
+  padding: 0;
+  margin: 0 2% 0 0;
 }
 
 .foot-content:hover {
