@@ -31,6 +31,10 @@ p {
 }
 
 
+a {
+  color: #fb8233;
+}
+
 .main-header {
   width:100%;
   display: -webkit-box;
@@ -49,23 +53,9 @@ p {
   background-size: cover;
 }
 
-
-a {
-  color: #fb8233;
+.section {
+  text-align: center;
 }
-/*
-.next {
-  font-size: 25px;
-  position: absolute;
-  top: 57px;
-  right: 17%;
-  z-index: 1;
-  cursor: pointer;
-  line-height:
-}*/
-
-
-
 
 .main-banner {
   font-size: 5em;
@@ -96,7 +86,9 @@ h1 {
   color: #444;
 }
 
-
+.navbar{
+  position: absolute;
+}
 
 /*---------------------- MAIN PAGE ---------------------*/
 
