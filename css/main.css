@@ -235,10 +235,24 @@ h1 {
 }
 
 .explore_site {
-  color: #444;
-  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
   height: 100vh;
-  justify-content: center;
+  padding: 10%;
+}
+
+.explore_site h3 {
+  text-transform: uppercase;
+  color: #444;
+  font-weight: bold;
+
+}
+
+.arrow-home {
+  height: 100px;
+  width: auto;
+  margin: 5% 0;
 }
 
 /*---------------------- LOGIN ---------------------*/
@@ -293,7 +307,6 @@ h1 {
   height: 100vh;
   background: linear-gradient(#fb8233, #ffab59);
   padding: 50px 0;
-  margin-top: 10%;
   color: #fff;
   border-top: 1px solid teal;
 
