@@ -167,6 +167,7 @@ h1 {
   margin-top: 5%;
   padding: 2% 0;
   border: none;
+  border-radius: 2px;
   background-color: #fb8233;
   font-weight: 900;
   color: #fff;
@@ -231,7 +232,7 @@ h1 {
 #contact-field {
   height: 100vh;
   background: linear-gradient(#fb8233, #ffab59);
-  padding: 10% 0;
+  padding: 50px 0;
   margin-top: 10%;
   color: #fff;
   border-top: 1px solid teal;
@@ -476,6 +477,7 @@ h1 {
   width: 100%;
   padding: 1%;
   border: none;
+  border-radius: 2px;
   background-color: #008686;
   font-weight: 900;
   color: #fff;
@@ -491,6 +493,7 @@ h1 {
   margin-top: 5%;
   padding: 3% 0;
   border: none;
+  border-radius: 3px;
   background-color: #fb8233;
   font-weight: 900;
   color: #fff;
@@ -498,9 +501,25 @@ h1 {
 }
 
 .btn-three:hover {
-  box-shadow: 0 11px 6px -6px rgba(119, 119, 119, 0.71);
-  background-color: ;
+  box-shadow: 0 9px 6px -6px rgba(119, 119, 119, 0.71);
+  background-color: #fc924d;
 
+}
+
+.sub-btn {
+  width: 100%;
+  padding: 1%;
+  border: none;
+  border-radius: 2px;
+  background-color: #008686;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.sub-btn:hover {
+  background-color: #03a6a6;
+  box-shadow: 0 9px 6px -6px rgba(119, 119, 119, 0.71);
 }
 
 .service-pref {
@@ -557,9 +576,17 @@ h1 {
 }
 
 
-.footer-nav li a {
-  /*padding: 0;*/
+.footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75vw;
 }
+
+.footer-nav ul li a {
+  margin-right: 20px;
+}
+
 
 .foot-content {
   font-size: 20px;
@@ -568,9 +595,6 @@ h1 {
   margin: 0 2% 0 0;
 }
 
-.foot-content:hover {
-  font-weight: 600;
-}
 
 .footer-title {
   text-align: center;
