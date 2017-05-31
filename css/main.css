@@ -49,7 +49,47 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(1, 68, 83, 1), rgba(0, 134, 134, .8)),
-    url("/img/skyout.jpg") no-repeat center fixed;
+    url("/img/skyout.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.image-stripe-one {
+  margin-top: 45px;
+  width:100%;
+  height: 37vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background:
+    linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
+    url("/img/YosTwo.JPG") no-repeat center fixed;
+  background-size: cover;
+}
+
+.image-stripe-two {
+  margin-top: 45px;
+  width:100%;
+  height: 37vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background:
+    linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
+    url("/img/RiverBend.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -83,7 +123,7 @@ h1 {
 .btm-banner {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #444;
+  color: #fb8233;
 }
 
 .navbar{
@@ -248,7 +288,7 @@ h1 {
 
 
 .header-top {
-  margin-top: 7%;
+  height: 100vh;
 }
 
 .b-a, .bar, .bar:before, .bar:after {
@@ -452,7 +492,7 @@ h1 {
   font-family: 'Neuton', serif;
   font-style: italic;
   color: #fb8233;
-  padding: 3% 8%;
+  padding: 1% 8%;
   line-height: 1.3em;
   letter-spacing: 2px;
   font-size: 1.3em;
@@ -536,11 +576,10 @@ h1 {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   min-height: 500px;
-  margin: 8% 0;
   padding: 5% 8% 4%;
   background: linear-gradient(#fb8233, #f3ae81);
   color: #444;
-
+  margin-bottom: 75px;
 }
 
 .pymd-img {
@@ -661,7 +700,7 @@ h1 {
 @media only screen and (max-width : 600px) {
   .main-banner {
     font-size: 4em;
-    margin-top: 25%;
+    margin-top: 5%;
   }
   .temp-header {
     font-size: 3.5em;
