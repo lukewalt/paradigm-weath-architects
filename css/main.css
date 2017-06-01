@@ -21,7 +21,7 @@ body > * {
 }
 
 nav ul a:hover {
-  color: #fb8233;
+  color: #ff9933;
 }
 
 p {
@@ -32,7 +32,7 @@ p {
 
 
 a {
-  color: #fb8233;
+  color: #ff9933;
 }
 
 .main-header {
@@ -108,7 +108,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   background:
-    linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
+    linear-gradient(to bottom, rgba(0, 134, 134, .7), rgba(0, 134, 134, .5)),
     url("/img/SanFran.jpg") no-repeat center fixed;
   background-size: cover;
 }
@@ -126,12 +126,11 @@ a {
 }
 
 .logo-case {
-  align-self: flex-start;
+  margin-right: auto;
 }
 
 .logo {
-  height: 60px;
-  margin: 3% 5%;
+  height: 50px;
 }
 
 h1 {
@@ -143,12 +142,39 @@ h1 {
 .btm-banner {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fb8233;
+  color: #ff9933;
 }
 
-.navbar{
+.navbar {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.12);
 }
+
+.nav-list {
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.nav-element {
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+.nav-element:hover {
+  border-bottom: 3px solid #ff9933;
+}
+
+
 
 /*---------------------- MAIN PAGE ---------------------*/
 
@@ -165,9 +191,9 @@ h1 {
 }
 
 .infoBlock-header {
-  /*font-weight: 900;*/
+  font-weight: 900;
   text-align: center;
-  /*letter-spacing: -3px;*/
+  letter-spacing: -3px;
   text-transform: uppercase;
 }
 
@@ -207,7 +233,6 @@ h1 {
 .sect-block {
   padding: 2% 10%;
   line-height: 1.2em;
-  font-weight: 900;
 }
 
 .click-me-font {
@@ -228,31 +253,33 @@ h1 {
   padding: 2% 0;
   border: none;
   border-radius: 2px;
-  background-color: #fb8233;
+  background-color: #ff9933;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
 }
 
 .explore_site {
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
   align-items: center;
   height: 100vh;
-  padding: 10%;
+  padding: 5%;
 }
 
 .explore_site h3 {
-  text-transform: uppercase;
   color: #444;
-  font-weight: bold;
 
 }
 
 .arrow-home {
-  height: 100px;
+  height: 25vh;
   width: auto;
   margin: 5% 0;
+}
+
+.arrow-btn {
+  height: 30px;
+  align-self: center;
 }
 
 /*---------------------- LOGIN ---------------------*/
@@ -267,7 +294,7 @@ h1 {
 
 .loginBtn:hover {
   background: linear-gradient(#014453, #008686);
-  color: #fb8233;
+  color: #ff9933;
   font-weight: 600;
   margin-bottom: 9%;
   box-shadow: 0 11px 6px -6px #777;
@@ -283,7 +310,7 @@ h1 {
 }
 
 #login-btn {
-  background-color: #fb8233;
+  background-color: #ff9933;
   margin-bottom: 15px;
 }
 
@@ -291,24 +318,24 @@ h1 {
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
 .input-field input[type=password]:focus + label {
-  color: #fb8233;
+  color: #ff9933;
 }
 
 .input-field input[type=date]:focus,
 .input-field input[type=text]:focus,
 .input-field input[type=email]:focus,
 .input-field input[type=password]:focus {
-  border-bottom: 2px solid #fb8233;
+  border-bottom: 2px solid #ff9933;
   box-shadow: none;
 }
 
 
 #contact-field {
   height: 100vh;
-  background: linear-gradient(#fb8233, #ffab59);
+  background: linear-gradient(#ff9933, #ffab59);
   padding: 50px 0;
   color: #fff;
-  border-top: 1px solid teal;
+  border-top: 3px solid teal;
 
 }
 
@@ -332,10 +359,11 @@ h1 {
   height: 6px;
   width: 30px;
   border-radius: 1px;
-  background-color: #fb8233;
+  background-color: #ff9933;
 }
 
 .menu-collapsed {
+  visibility: hidden;
   transition: all .25s;
   position: fixed;
   top: 10px;
@@ -432,14 +460,14 @@ h1 {
   text-decoration: none;
   font-size: 2em;
   padding: 5px;
-  color: #fb8233;
+  color: #ff9933;
   display: block;
 }
 
 .menu-expanded a:hover {
   transition: all .15s;
   letter-spacing: 1px;
-  color: #fb8233;
+  color: #ff9933;
 }
 .menu-expanded-inv a:hover {
   transition: all .15s;
@@ -517,14 +545,14 @@ h1 {
   padding: 6% 0;
   background: linear-gradient(#014453, #008686);
   color: #fff;
-  border-bottom: 2px solid #fb8233;
+  border-bottom: 2px solid #ff9933;
 
 }
 
 .quote {
   font-family: 'Neuton', serif;
   font-style: italic;
-  color: #fb8233;
+  color: #ff9933;
   padding: 1% 8%;
   line-height: 1.3em;
   letter-spacing: 2px;
@@ -558,7 +586,7 @@ h1 {
 }
 .btn-two:hover {
   box-shadow: 0 11px 6px -6px rgba(119, 119, 119, 0.71);
-  color: #fb8233;
+  color: #ff9933;
 }
 
 .btn-three {
@@ -567,7 +595,7 @@ h1 {
   padding: 3% 0;
   border: none;
   border-radius: 3px;
-  background-color: #fb8233;
+  background-color: #ff9933;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
@@ -575,7 +603,7 @@ h1 {
 
 .btn-three:hover {
   box-shadow: 0 9px 6px -6px rgba(119, 119, 119, 0.71);
-  background-color: #fc924d;
+  background-color: #ffb162;
 
 }
 
@@ -610,7 +638,7 @@ h1 {
   border-bottom: 2px solid #fff;
   min-height: 500px;
   padding: 5% 8% 4%;
-  background: linear-gradient(#fb8233, #f3ae81);
+  background: linear-gradient(#ff9933, #f3ae81);
   color: #444;
   margin-bottom: 75px;
 }
@@ -649,6 +677,9 @@ h1 {
   font-size: 15px;
   bottom: 0;
 }
+.cprfoot a {
+  color: #fff;
+}
 
 
 .footer-nav ul {
@@ -656,6 +687,10 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   width: 75vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 .footer-nav ul li a {
@@ -664,7 +699,7 @@ h1 {
 
 
 .foot-content {
-  font-size: 20px;
+  font-size: 18px;
   color: #444;
   padding: 0;
   margin: 0 2% 0 0;
@@ -690,12 +725,10 @@ h1 {
 }
 
 
-/*.tricker {
-  height: 50px;
-  overflow: hidden;
-  margin: 0 auto ;
+.tricker {
+  margin-top: 50px;
 }
-.tricker h5 {
+/*.tricker h5 {
   margin: 0;
   height: 50px;
   line-height: 50px;
@@ -703,7 +736,7 @@ h1 {
   text-align: center;
   text-transform: lowercase;
   transition: margin-top 1s ease;
-  color: #fb8233;
+  color: #ff9933;
   font-weight: bold;
 }*/
 
@@ -730,6 +763,14 @@ h1 {
     float: left;
     margin: 5% 12%;
     height: 400px;
+  }
+
+  .menu-collapsed {
+    visibility: visible;
+  }
+
+  .nav-list {
+    visibility: hidden;
   }
 }
 
