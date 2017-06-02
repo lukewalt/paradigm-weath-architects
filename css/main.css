@@ -49,7 +49,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(1, 68, 83, 1), rgba(0, 134, 134, .8)),
-    url("/img/skyout.jpg") no-repeat fixed;
+    url("/img/skyout.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
