@@ -5,7 +5,7 @@ body > * {
 
 
 #cli-sit li {
-  font-size: .8em;
+  font-size: 1em;
   list-style-type: square;
   line-height: 1.4em;
   margin: 10% 0;
@@ -143,6 +143,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #ff9933;
+  font-size: .8em;
 }
 
 .navbar {
@@ -164,7 +165,7 @@ h1 {
 .nav-element {
   color: #fff;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 15px;
   letter-spacing: 2px;
   font-size: 20px;
   font-weight: 200;
@@ -262,17 +263,16 @@ h1 {
 .explore_site {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 10vh;
   padding: 5%;
 }
 
-.explore_site h3 {
+.explore_site p {
   color: #444;
-
 }
 
 .arrow-home {
-  height: 25vh;
+  height: 5vh;
   width: auto;
   margin: 5% 0;
 }
