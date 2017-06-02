@@ -69,7 +69,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
-    url("/img/YosTwo.JPG") no-repeat center fixed;
+    url("/img/yostwo.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -89,7 +89,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
-    url("/img/YosThree.jpg") no-repeat center fixed;
+    url("/img/yosthree.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -109,7 +109,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(0, 134, 134, .7), rgba(0, 134, 134, .5)),
-    url("/img/SanFran.jpg") no-repeat center fixed;
+    url("/img/sanfran.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
