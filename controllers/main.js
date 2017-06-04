@@ -14,7 +14,7 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
   }
 
   AOS.init({
-    duration: 800
+    duration: 900
   })
 
 

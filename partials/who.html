@@ -11,9 +11,34 @@
      <li><a ng-click="doLogout()">Sign Out</a></li>
    </ul>
  </div>
-
 </div>
 
+<!-- NAV BAR -->
+<div class="navbar">
+  <div class="logo-case">
+    <img class="logo" src="img/PWA_logo.png" alt="logo">
+  </div>
+  <div class="nav-list">
+    <a class="nav-element dropdown-button" href='/#!/why#why-top' data-beloworigin="true" data-activates='dropdown1'>Why</a>
+      <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="/#!/why#phil">Our Philosophy</a></li>
+          <li><a href="/#!/why#foundation">Our Foundation</a></li>
+          <li><a href="/#!/why#pro-journ">Professional Jouney</a></li>
+          <li><a href="/#!/why#per-journ">Personal Journey</a></li>
+      </ul>
+    <a class="nav-element dropdown-button" href="/#!/how#how-top" data-beloworigin="true" data-activates='dropdown2'>How</a>
+      <ul id='dropdown2' class='dropdown-content'>
+          <li><a href="/#!/how#newpara">A New Paradigm</a></li>
+          <li><a href="/#!/how#truwealth">Creating True Wealth</a></li>
+          <li><a href="/#!/how#be-arch">Being A Decision Architect</a></li>
+      </ul>
+    <a class="nav-element dropdown-button" href="/#!/who#who-top">Who</a>
+
+    <a class="nav-element dropdown-button" href="/#!/services">Services</a>
+    <a class="nav-element dropdown-button" href="/#!/resources">Resources</a>
+    <a class="nav-element dropdown-button" ng-click="doLogout()">SignOut</a>
+  </div>
+</div>
 
 <div id="who-top" class="blue-gradient">
   <div class=" center">

@@ -13,21 +13,29 @@
  </div>
 
 </div>
+
+<!-- NAV BAR -->
 <div class="navbar">
   <div class="logo-case">
     <img class="logo" src="img/PWA_logo.png" alt="logo">
   </div>
   <div class="nav-list">
-    <a class="nav-element dropdown-button" href='' data-beloworigin="true" data-activates='dropdown1'>Why</a>
+    <a class="nav-element dropdown-button" href='/#!/why#why-top' data-beloworigin="true" data-activates='dropdown1'>Why</a>
       <ul id='dropdown1' class='dropdown-content'>
           <li><a href="/#!/why#phil">Our Philosophy</a></li>
           <li><a href="/#!/why#foundation">Our Foundation</a></li>
           <li><a href="/#!/why#pro-journ">Professional Jouney</a></li>
           <li><a href="/#!/why#per-journ">Personal Journey</a></li>
       </ul>
-    <a class="nav-element dropdown-button" href="/#!/how#how-top">How</a>
+    <a class="nav-element dropdown-button" href="/#!/how#how-top" data-beloworigin="true" data-activates='dropdown2'>How</a>
+      <ul id='dropdown2' class='dropdown-content'>
+          <li><a href="/#!/how#newpara">A New Paradigm</a></li>
+          <li><a href="/#!/how#truwealth">Creating True Wealth</a></li>
+          <li><a href="/#!/how#be-arch">Being A Decision Architect</a></li>
+      </ul>
     <a class="nav-element dropdown-button" href="/#!/who#who-top">Who</a>
-    <a class="nav-element dropdown-button" href="/#!/why/#phil">Philosophy</a>
+
+    <a class="nav-element dropdown-button" href="/#!/services">Services</a>
     <a class="nav-element dropdown-button" href="/#!/resources">Resources</a>
     <a class="nav-element dropdown-button" ng-click="doLogout()">SignOut</a>
   </div>
@@ -40,15 +48,13 @@
     <div class="container">
       <div class=" center tricker">
         <h5 class=" btm-banner"> Design Your Life - Set Your Foundation - Build Your Future </h5>
-        <!-- <h5>Design Your Life</h5>
-        <h5>Set Your Foundation</h5>
-        <h5>Build Your Future</h5> -->
+
       </div>
       <div class="header-cont">
         <h1 class="main-banner center" data-aos="zoom-in"> WEALTH IS A STATE OF WELLBEING  </h1>
       </div>
       <a href="/#!/home/#contact-field">
-        <button type="button" name="button" class="go-to-contact">Contact</button>
+        <button type="button" name="button" class="go-to-contact ">Contact</button>
       </a>
     </div>
   </div>
@@ -64,7 +70,7 @@
 
     <div class="row trifoldBlock">
       <div class="mission-sect icon-sect col m6 l6">
-        <img class="icon center-block img-responsive" src="img/003-spacecraft.png" alt="rocket" data-aos="">
+        <img data-aos="zoom-in" class="icon center-block img-responsive" src="img/003-spacecraft.png" alt="rocket" data-aos="">
       </div>
       <div class="col m6 l6 ">
         <h2 class="infoBlock-header">Mission</h2>
@@ -88,13 +94,13 @@
           </p>
       </div>
       <div class="vision-sect icon-sect col m6 l6">
-        <img class="icon center-block img-responsive" src="img/002-telescope.png" alt="telescope">
+        <img data-aos="zoom-in" class="icon center-block img-responsive" src="img/002-telescope.png" alt="telescope">
       </div>
     </div>
 
     <div class="row trifoldBlock" data-aos="">
       <div class="phil-sect icon-sect col m6 l6 ">
-        <img class="icon center-block img-responsive" src="img/001-cogwheel.png" alt="cogwheel">
+        <img data-aos="zoom-in" class="icon center-block img-responsive" src="img/001-cogwheel.png" alt="cogwheel">
       </div>
       <div class="col m6 l6">
         <h2 class="infoBlock-header">Philosophy</h2>
