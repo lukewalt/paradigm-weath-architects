@@ -9,7 +9,7 @@ app.controller('WhyCtrl', function($scope){
 
 
   AOS.init({
-    duration: 1100
+    duration: 700
   })
 
   $scope.doLogout = () => {

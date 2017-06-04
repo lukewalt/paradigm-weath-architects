@@ -659,6 +659,9 @@ h1 {
   height: 100%; width: 150px; margin: 25px 0;
 }
 
+.dropdown-content li {
+  padding: 0 10px;
+}
 
 /*---------------------- FOOTER ---------------------- */
 

@@ -18,12 +18,18 @@
     <img class="logo" src="img/PWA_logo.png" alt="logo">
   </div>
   <div class="nav-list">
-    <a class="nav-element" href="/#!/why#why-top">Why</a>
-    <a class="nav-element" href="/#!/how#how-top">How</a>
-    <a class="nav-element" href="/#!/who#who-top">Who</a>
-    <a class="nav-element" href="/#!/why/#phil">Philosophy</a>
-    <a class="nav-element" href="/#!/resources">Resources</a>
-    <a class="nav-element" ng-click="doLogout()">SignOut</a>
+    <a class="nav-element dropdown-button" href='' data-beloworigin="true" data-activates='dropdown1'>Why</a>
+      <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="/#!/why#phil">Our Philosophy</a></li>
+          <li><a href="/#!/why#foundation">Our Foundation</a></li>
+          <li><a href="/#!/why#pro-journ">Professional Jouney</a></li>
+          <li><a href="/#!/why#per-journ">Personal Journey</a></li>
+      </ul>
+    <a class="nav-element dropdown-button" href="/#!/how#how-top">How</a>
+    <a class="nav-element dropdown-button" href="/#!/who#who-top">Who</a>
+    <a class="nav-element dropdown-button" href="/#!/why/#phil">Philosophy</a>
+    <a class="nav-element dropdown-button" href="/#!/resources">Resources</a>
+    <a class="nav-element dropdown-button" ng-click="doLogout()">SignOut</a>
   </div>
 </div>
 
@@ -124,7 +130,6 @@
     Comment:<br>
     <input type="text" name="comment" size="50"><br><br>
     <div class="form-btn">
-
       <input class="sub-btn" type="submit" value="Send" style="width: 47%">
       <input class="sub-btn" type="reset" value="Reset" style="width: 47%">
     </div>
