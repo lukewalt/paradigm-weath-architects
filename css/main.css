@@ -506,6 +506,7 @@ h1 {
 
 /*---------------------- PAGES ---------------------- */
 
+
 .stripe {
   height: 25vh;
   width: 100%;
@@ -573,6 +574,8 @@ h1 {
 .questions {
   padding: 5% 5% 0 5%;
   color: #444;
+  overflow-x: hidden;
+
 }
 
 .btn-two {
@@ -726,17 +729,7 @@ h1 {
 .tricker {
   margin-top: 50px;
 }
-/*.tricker h5 {
-  margin: 0;
-  height: 50px;
-  line-height: 50px;
-  font-size: 40px;
-  text-align: center;
-  text-transform: lowercase;
-  transition: margin-top 1s ease;
-  color: #ff9933;
-  font-weight: bold;
-}*/
+
 
 
 /*-------------------- MEDIA QUERIES --------------------*/
