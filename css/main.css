@@ -27,7 +27,7 @@ nav ul a:hover {
 p {
   font-weight: 200;
   line-height: 1.7em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 
@@ -635,13 +635,10 @@ h1 {
 }
 
 .maslow {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
   min-height: 500px;
   padding: 5% 8% 4%;
-  background: linear-gradient(#ff9933, #f3ae81);
-  color: #444;
-  margin-bottom: 75px;
+  background: linear-gradient(#008686, #014453);
+  color: #fff;
 }
 
 .pymd-img {
