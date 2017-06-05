@@ -15,8 +15,11 @@
 
 <!-- NAV BAR -->
 <div class="navbar">
+  <img ng-if="showLg" class="logo-lg" src="img/PWA_logo.png" alt="logo">
   <div class="logo-case">
-    <img class="logo" src="img/PWA_logo.png" alt="logo">
+    <a href="/#!/home#main-top">
+      <img class="logo" src="img/PWA_logo.png" alt="logo">
+    </a>
   </div>
   <div class="nav-list">
     <a class="nav-element dropdown-button" href='/#!/why#why-top' data-beloworigin="true" data-activates='dropdown1'>Why</a>

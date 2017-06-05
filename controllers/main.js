@@ -22,6 +22,15 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
   $('.main-header').height(vph)
 
 
+  $scope.showLg = false
+  console.log($(window).width());
+
+  if ($(window).width() < 992) {
+    $scope.showLg = true
+    $scope.apply()
+  }
+
+
 
   $('.dropdown-button').dropdown({
       inDuration: 300,
