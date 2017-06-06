@@ -17,10 +17,6 @@ app.config(($routeProvider, $locationProvider) => {
 
 
   $routeProvider
-    .when('/', {
-        controller: 'LoginCtrl',
-        templateUrl: 'partials/login.html'
-    })
     .when('/home', {
         controller: 'MainCtrl',
         templateUrl: 'partials/main.html'
@@ -46,7 +42,7 @@ app.config(($routeProvider, $locationProvider) => {
         templateUrl: 'partials/resources.html'
     })
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
     })
 
 })
