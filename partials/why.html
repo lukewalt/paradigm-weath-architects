@@ -13,36 +13,35 @@
  </div>
 </div>
 
-<!-- NAV BAR -->
 <div class="navbar">
   <img ng-if="showLg" class="logo-lg" src="img/PWA_logo.png" alt="logo">
   <div class="logo-case">
     <a href="/#!/home#main-top">
-      <img class="logo" src="img/PWA_logo.png" alt="logo">
+      <img class="logo" src="img/PWA_logo_orange.png" alt="logo">
     </a>
   </div>
   <div class="nav-list">
     <a class="nav-element dropdown-button" href='/#!/why#why-top' data-beloworigin="true" data-activates='dropdown1'>Why</a>
       <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="/#!/why#phil">Our Philosophy</a></li>
-          <li><a href="/#!/why#foundation">Our Foundation</a></li>
-          <li><a href="/#!/why#pro-journ">Professional Jouney</a></li>
-          <li><a href="/#!/why#per-journ">Personal Journey</a></li>
+          <li><a href="/#!/why#phil">Our Mission</a></li>
+          <li><a href="/#!/why#foundation">Our Vision</a></li>
+          <li><a href="/#!/why#about">Our Journey</a></li>
       </ul>
     <a class="nav-element dropdown-button" href="/#!/how#how-top" data-beloworigin="true" data-activates='dropdown2'>How</a>
       <ul id='dropdown2' class='dropdown-content'>
-          <li><a href="/#!/how#newpara">A New Paradigm</a></li>
-          <li><a href="/#!/how#truwealth">Creating True Wealth</a></li>
-          <li><a href="/#!/how#be-arch">Being A Decision Architect</a></li>
+          <li><a href="/#!/how#newpara">Paradigm: A New Paradigm</a></li>
+          <li><a href="/#!/how#truwealth">Wealth: Creating True Wealth</a></li>
+          <li><a href="/#!/how#be-arch">Architects: Being A Decision Architect</a></li>
       </ul>
-    <a class="nav-element dropdown-button" href="/#!/who#who-top">Who</a>
-
-    <a class="nav-element dropdown-button" href="/#!/services">Services</a>
+    <a class="nav-element dropdown-button" href="/#!/who#who-top" data-beloworigin="true" data-activates='dropdown3'>Who</a>
+      <ul id='dropdown3' class='dropdown-content'>
+        <li><a href="/#!/services#services">Our Services</a></li>
+        <li><a href="/#!/home/#contact-field">Contact Us</a></li>
+      </ul>
     <a class="nav-element dropdown-button" href="/#!/resources">Resources</a>
-    <a class="nav-element dropdown-button" ng-click="doLogout()">SignOut</a>
+    <a class="nav-element dropdown-button" href="/#!/why#about">About</a>
   </div>
 </div>
-
 
 <div class="blue-gradient" id="why-top">
   <div id="why-top" class="center header-top ">
@@ -93,11 +92,11 @@
 
 
   <!-- OUR JOURNEY -->
-  <div id="pro-journ" class="  center">
+  <div class="  center">
     <div class="image-stripe-one">
 
     </div>
-    <h3 class="subhead-one">Our Journey</h3>
+    <h3 id="about" class="subhead-one">Our Journey</h3>
     <p class="quote">
       “If I have the belief that I can do it, I shall surely acquire the capacity to do it even if I may not have it at the beginning.” – Mahatma Gandhi
     </p>
@@ -106,10 +105,10 @@
   <div class="container" >
     <h5 class="sub-header-two">Professional Journey :</h5>
     <p>
-      Russell Kroeger CFP®, founder of Paradigm Wealth Architects, LLC has been focused on exploring the Financial Planning profession since taking a personal finance course in high school. His passion took him to Virginia Tech where he graduated with a B.S in Finance through their Certified Financial Planning™ program. After graduating, Russell worked for a Financial Planning firm in North Carolina where he built a strong technical foundation serving more than 45 clients. He then journeyed to San Francisco to join a nationally recognized firm’s first class of Financial Planning Residents (a program modeled after a doctor’s residency) to enhance his personal and professional skills and further explore the profession. During the in-residence program, Russell was responsible for more than 80 client relationships and over $100,000,000 in direct support of the firm’s managing director. Upon graduating from his role as a resident, Russell took a worked as a Tax Manager at a CPA firm, and currently engages local Financial Planning firms as a consultant while operating Paradigm Wealth.
+      Russell Kroeger CFP®, founder of Paradigm Wealth Architects, LLC has been focused on exploring the Financial Planning profession since taking a personal finance course in high school. His passion took him to Virginia Tech where he graduated with a B.S in Finance through their Certified Financial Planning™ program. After graduating, Russell worked for a Financial Planning firm in North Carolina where he built a strong technical foundation serving more than 45 clients. He then journeyed to San Francisco to join a nationally recognized firm’s first class of Financial Planning Residents (a program modeled after a doctor’s residency) to enhance his personal and professional skills and further explore the profession. During the in-residence program, Russell was responsible for more than 80 client relationships and over $100,000,000 in direct support of the firm’s managing director. Upon graduating from his role as a resident, Russell worked as a Tax Manager at a CPA firm, and currently engages local Financial Planning firms as a consultant while operating Paradigm Wealth.
     </p>
     <p>
-      He is a graduate of FPA’s Residency Program, has completed Money Quotient’s ‘Fundamentals of Financial Life Planning’ training course, and is currently pursuing an M.S. in Financial Planning and Taxation at Golden Gate University. Continuing his active involvement with the FPA, Russell served as the 2016 Co-Director of San Francisco’s NexGen community (a subset of the FPA for members 36 and under) and currently serves as the Director of Advocacy for the San Francisco chapter, a Representative of the FPA of California State Council, and the NexGen Representative for the OneFPA Advisory Group.
+      He also is a graduate of Financial Planning Association’s (FPA’s) Residency Program, has completed Money Quotient’s ‘Fundamentals of Financial Life Planning’ training course, and is currently pursuing an M.S. in Financial Planning and Taxation at Golden Gate University. Continuing his active involvement with the FPA, Russell served as the 2016 Co-Director of San Francisco’s NexGen community (a subset of the FPA for members 36 and under) and currently serves as the Director of Advocacy for the San Francisco chapter, a Representative of the FPA of California State Council, and the NexGen Representative for the OneFPA Advisory Group.
     </p>
 
     <p>
@@ -132,7 +131,7 @@
         It’s easy to look back at life and craft a story about how making the right decisions and working hard afforded me to be where I am and have the opportunities that I do. However, to the extent my recollections of events and accomplishments are accurate, most stories tend to focus too much on the protagonist and would be better served by a perspective that credits those who helped along the journey.
       </p>
       <p>
-        Raised in a small town in Virginia, I was blessed to grow up in a great family with loving and encouraging parents, a roof over my head, homecooked meals on the table, and good schools to attend. To ensure stability and other opportunities for my sister and I, both parents worked incredibly hard; for years, this meant juggling multiple jobs so we could explore and learn. However, other than providing necessities for our family, money and status were never a priority over meaning and contributing to our community. Rather than material things, they emphasized stewardship for our blessings and giving back out of gratitude. Unfortunately, my dad got sick and after years of fighting he passed away during my sophomore year of high school. Circumstances required me to get a job to ease some of the financial burden, and that experience magnified my interest in business and finance. When the opportunity was available, I happily took a personal finance class in the mornings before school. It was the first time I realized that there was a field of study devoted to financial well-being and purposeful decision-making to achieve a desired future.
+        Raised in a small town in Virginia, I was blessed to grow up in a great family with loving and encouraging parents, a roof over my head, homecooked meals on the table, and good schools to attend. To ensure stability and other opportunities for my sister and I, both parents worked incredibly hard; for years, this meant juggling multiple jobs so we could explore and learn. However, other than providing necessities for our family, money and status were never a priority over meaning and contributing to our community. Rather than material wealth, they emphasized stewardship for our blessings and giving back out of gratitude. Unfortunately, my dad got sick and after years of fighting he passed away during my sophomore year of high school. Circumstances required me to get a job to ease some of the financial burden, and that experience magnified my interest in business and finance. When the opportunity was available, I happily took a personal finance class in the mornings before school. It was the first time I realized that there was a field of study devoted to financial well-being and purposeful decision-making to achieve a desired future.
       </p>
       <p>
         Two years later I was pursuing a degree in Finance at Virginia Tech with a concentration in Financial Planning and was actively involved in every related opportunity. These experiences opened doors to learn from and build relationships with many of the top minds in the profession. Their passion for helping people transcend circumstances was contagious, but I also learned that the profession, being relatively young, had a lot of progress ahead. Always being one to challenge the status quo, I had ideas about how the profession could truly have an impact. Witnessing how much my parents could contribute to the lives of those they knew without significant financial means personifies resourcefulness, and is the spark for my optimism about the power of quality Financial Planning. However, most financial advisors wouldn’t work with people like my parents because they couldn’t afford products that provided strong commissions for the salesman and didn’t have enough assets for a financial advisor to manage.

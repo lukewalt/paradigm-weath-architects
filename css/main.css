@@ -69,7 +69,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
-    url("/img/yostwo.jpg") no-repeat center fixed;
+    url("/img/yostwo.jpg") no-repeat top fixed;
   background-size: cover;
 }
 
@@ -89,7 +89,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(0, 134, 134, .8), rgba(0, 134, 134, .8)),
-    url("/img/yosthree.jpg") no-repeat center fixed;
+    url("/img/yosthree.jpg") no-repeat top fixed;
   background-size: cover;
 }
 
@@ -109,7 +109,7 @@ a {
   justify-content: center;
   background:
     linear-gradient(to bottom, rgba(0, 134, 134, .7), rgba(0, 134, 134, .5)),
-    url("/img/sanfran.jpg") no-repeat center fixed;
+    url("/img/sanfran.jpg") no-repeat top fixed;
   background-size: cover;
 }
 
@@ -130,7 +130,7 @@ a {
 }
 
 .logo {
-  height: 50px;
+  height: 65px;
 }
 
 h1 {
@@ -166,7 +166,7 @@ h1 {
   color: #fff;
   text-transform: uppercase;
   margin-right: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 20px;
   font-weight: 200;
   text-align: center;
@@ -544,7 +544,7 @@ h1 {
 
 .blue-gradient {
   min-height: 600px;
-  padding: 100px 0;
+  padding: 150px 0;
   background: linear-gradient(#014453, #008686);
   color: #fff;
   border-bottom: 2px solid #ff9933;
@@ -607,7 +607,7 @@ h1 {
 
 .btn-three:hover {
   box-shadow: 0 9px 6px -6px rgba(119, 119, 119, 0.71);
-  background-color: #ffb162;
+  background-color: #ffa449;
 
 }
 
@@ -657,6 +657,9 @@ h1 {
 
 .serv-image {
   height: 100%; width: 150px; margin: 25px 0;
+}
+
+.dropdown-content {
 }
 
 .dropdown-content li {
@@ -776,6 +779,13 @@ h1 {
 
 }
 
+@media only screen and (max-width : 860px) {
+  .stripe-logo {
+    height: 7vh;
+  }
+
+}
+
 @media only screen and (max-width : 600px) {
   .main-banner {
     font-size: 4em;
@@ -799,6 +809,9 @@ h1 {
     float: left;
     margin: 5% 12%;
     height: 300px;
+  }
+  .stripe-logo {
+    height: 4vh;
   }
 
 }
