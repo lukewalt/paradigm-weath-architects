@@ -131,12 +131,13 @@ a {
 
 .logo {
   height: 65px;
+  -webkit-transition: height .3s;
+  transition: height .3s;
 }
 
 h1 {
   margin-top: 4%;
 }
-
 
 
 .btm-banner {
@@ -153,8 +154,11 @@ h1 {
   width: 100vw;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px;
-  /*background-color: #014453;*/
+  padding: 15px;
+  background-color: 'transparent';
+  z-index: 5;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
 
 .nav-list {

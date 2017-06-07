@@ -1,17 +1,30 @@
 app.controller('ServCtrl', function($scope, $location ,authFactory){
   console.log('Services');
 
+  $(document).ready(function(){
+   let scroll_start = 0;
+   let startchange = $('#startchange');
+   let offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#nav').css('background-color', '#fff');
+          $('.navbar').css('padding', '5px 15px');
+          $('.logo').css('height', '45px');
+          $('.nav-element').css('color', '#014453');
+      } else {
+        $('#nav').css('background-color', 'transparent');
+        $('.logo').css('height', '65px');
+        $('.nav-element').css('color', '#fff');
+        $('.navbar').css('padding', '15px');
 
+      }
+   });
+  });
 
-  $scope.doLogout = () => {
-    authFactory.logout()
-    .then(() => $location.path('/'))
-  }
 
   $(".menu-collapsed").click(function() {
-
     $(this).toggleClass("menu-expanded-inv");
-
   });
 
   $('.dropdown-button').dropdown({

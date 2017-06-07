@@ -16,6 +16,7 @@ app.config(($routeProvider, $locationProvider) => {
   });
 
 
+
   $routeProvider
     .when('/home', {
         controller: 'MainCtrl',

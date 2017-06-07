@@ -1,17 +1,10 @@
 app.controller('MainCtrl', function ($scope, $location, authFactory){
 
   $(".menu-collapsed").click(function() {
-
     $(this).toggleClass("menu-expanded-inv");
-
   });
 
-  $scope.doLogout = () => {
-    authFactory.logout()
-    .then(() => {
-      $location.url('/')
-    })
-  }
+
 
   AOS.init({
     duration: 900
@@ -31,20 +24,24 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
   }
 
   $(document).ready(function(){
-  var scroll_start = 0;
-  var startchange = $('#startchange');
-  var offset = startchange.offset();
-  if (startchange.length){
-      $(document).scroll(function() {
-          scroll_start = $(this).scrollTop();
-          if(scroll_start > offset.top) {
-              $(".navbar-fixed-top").css({'background-color':'#24363d',
-                                          'opacity': '0.3'});
-          } else {
-              $('.navbar-fixed-top').css({'background-color':'transparent'});
-          }
-      });
-  }
+   let scroll_start = 0;
+   let startchange = $('#startchange');
+   let offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#nav').css('background-color', '#fff');
+          $('.navbar').css('padding', '5px 15px');
+          $('.logo').css('height', '45px');
+          $('.nav-element').css('color', '#014453');
+      } else {
+        $('#nav').css('background-color', 'transparent');
+        $('.logo').css('height', '65px');
+        $('.nav-element').css('color', '#fff');
+        $('.navbar').css('padding', '15px');
+
+      }
+   });
   });
 
   $('.dropdown-button').dropdown({
