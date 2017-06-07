@@ -41,6 +41,14 @@ app.config(($routeProvider, $locationProvider) => {
         controller: 'ResrCtrl',
         templateUrl: 'partials/resources.html'
     })
+    .when('/disclaimer', {
+        controller: 'legalCtrl',
+        templateUrl: 'partials/disclaimer.html'
+    })
+    .when('/privacy', {
+        controller: 'legalCtrl',
+        templateUrl: 'partials/privacy.html'
+    })
     .otherwise({
         redirectTo: '/home'
     })

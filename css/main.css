@@ -147,14 +147,14 @@ h1 {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 100vw;
   justify-content: flex-end;
   align-items: center;
   padding: 20px;
-  /*background-color: rgba(255, 255, 255, 0.12);*/
+  /*background-color: #014453;*/
 }
 
 .nav-list {
@@ -244,7 +244,7 @@ h1 {
 
 
 #services_table {
-  height: 100vh;
+  height: 90vh;
   margin-bottom: 10% ;
 
 }
@@ -282,6 +282,7 @@ h1 {
   height: 30px;
   align-self: center;
 }
+
 
 /*---------------------- LOGIN ---------------------*/
 
@@ -349,7 +350,7 @@ h1 {
 
 
 .header-top {
-  height: 100vh;
+  height: 80vh;
 }
 
 .b-a, .bar, .bar:before, .bar:after {
@@ -502,7 +503,14 @@ h1 {
   transform: rotate(-45deg);
 }
 
+.collapsible-header {
+  border: none;
+}
 
+.collapsible {
+  border: none;
+  box-shadow: none;
+}
 
 /*---------------------- PAGES ---------------------- */
 
@@ -685,9 +693,13 @@ h1 {
 .cprfoot {
   font-size: 15px;
   bottom: 0;
+  display: flex;
+  flex-flow: row;
+
 }
 .cprfoot a {
   color: #fff;
+  margin-right: 5%;
 }
 
 
