@@ -1,4 +1,4 @@
-app.controller('MainCtrl', function ($scope, $location, authFactory){
+app.controller('MainCtrl', function ($scope, $location, $window, $timeout, authFactory){
 
   $(".menu-collapsed").click(function() {
     $(this).toggleClass("menu-expanded-inv");
@@ -15,14 +15,8 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
   $('.main-header').height(vph)
 
 
-  $scope.showLg = false
-  console.log($(window).width());
 
-  if ($(window).width() < 992) {
-    $scope.showLg = true
-    $scope.apply()
-  }
-
+  // ANIMATION CHANGES FOR NAVBAR
   $(document).ready(function(){
    let scroll_start = 0;
    let startchange = $('#startchange');
@@ -30,12 +24,12 @@ app.controller('MainCtrl', function ($scope, $location, authFactory){
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $('#nav').css('background-color', '#fff');
+          $('#nav').css({'background-color': '#fff', 'border-bottom': '2px solid orange'});
           $('.navbar').css('padding', '5px 15px');
           $('.logo').css('height', '45px');
           $('.nav-element').css('color', '#014453');
       } else {
-        $('#nav').css('background-color', 'transparent');
+        $('#nav').css({'background-color': 'transparent', 'border-bottom': 'none'});
         $('.logo').css('height', '65px');
         $('.nav-element').css('color', '#fff');
         $('.navbar').css('padding', '15px');

@@ -21,6 +21,7 @@ app.controller('WhoCtrl', function($scope, $location ,authFactory){
     }
   );
 
+  // ANIMATION CHANGES FOR NAVBAR
   $(document).ready(function(){
    let scroll_start = 0;
    let startchange = $('#startchange');
@@ -28,12 +29,12 @@ app.controller('WhoCtrl', function($scope, $location ,authFactory){
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $('#nav').css('background-color', '#fff');
+          $('#nav').css({'background-color': '#fff', 'border-bottom': '2px solid orange'});
           $('.navbar').css('padding', '5px 15px');
           $('.logo').css('height', '45px');
           $('.nav-element').css('color', '#014453');
       } else {
-        $('#nav').css('background-color', 'transparent');
+        $('#nav').css({'background-color': 'transparent', 'border-bottom': 'none'});
         $('.logo').css('height', '65px');
         $('.nav-element').css('color', '#fff');
         $('.navbar').css('padding', '15px');

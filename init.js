@@ -3,8 +3,6 @@ var app = angular.module('pwa', ['ngRoute']);
 app.config(($routeProvider, $locationProvider) => {
 
   // $locationProvider.hashPrefix('');
-  console.log('Config executing')
-
 
   // FIREBASE AUTH
   firebase.initializeApp({

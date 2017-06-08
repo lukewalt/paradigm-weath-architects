@@ -131,8 +131,8 @@ a {
 
 .logo {
   height: 65px;
-  -webkit-transition: height .3s;
-  transition: height .3s;
+  -webkit-transition: height .2s;
+  transition: height .2s;
 }
 
 h1 {
@@ -157,8 +157,8 @@ h1 {
   padding: 15px;
   background-color: 'transparent';
   z-index: 5;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 .nav-list {
@@ -176,7 +176,7 @@ h1 {
   text-align: center;
 }
 .nav-element:hover {
-  border-bottom: 3px solid #ff9933;
+  border-top: 3px solid #ff9933;
 }
 
 
@@ -362,10 +362,11 @@ h1 {
   content: "";
   position: absolute;
   right: 0;
-  height: 6px;
+  height: 4px;
   width: 30px;
   border-radius: 1px;
   background-color: #ff9933;
+  z-index: 100;
 }
 
 .menu-collapsed {
@@ -376,7 +377,7 @@ h1 {
   right: 10px;
   height: 36px;
   width: 36px;
-  z-index: 1;
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -438,14 +439,14 @@ h1 {
   transition: all 0s;
   position: relative;
   left: 0;
-  z-index: 2;
+  z-index: 12;
 }
 .menu-expanded-inv ul {
   margin-top: 4%;
   transition: all 0s;
   position: relative;
   left: 0;
-  z-index: 2;
+  z-index: 12;
 }
 
 
@@ -587,7 +588,6 @@ h1 {
   padding: 5% 5% 0 5%;
   color: #444;
   overflow-x: hidden;
-
 }
 
 .btn-two {
@@ -678,6 +678,11 @@ h1 {
   padding: 0 10px;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.orange-border {
+  border-bottom: 2px solid #ff9933;
+
 }
 
 /*---------------------- FOOTER ---------------------- */
@@ -789,7 +794,8 @@ h1 {
   }
 
   .nav-list,
-  .logo-case {
+  .logo-case,
+  #nav {
     visibility: hidden;
   }
 
@@ -804,7 +810,7 @@ h1 {
 
 @media only screen and (max-width : 600px) {
   .main-banner {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-top: 5%;
   }
   .temp-header {
@@ -827,7 +833,7 @@ h1 {
     height: 300px;
   }
   .stripe-logo {
-    height: 4vh;
+    height: 6vh;
   }
 
 }

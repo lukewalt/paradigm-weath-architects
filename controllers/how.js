@@ -5,25 +5,26 @@ app.controller('HowCtrl', function($scope, $location, authFactory){
   });
 
   // ANIMATION CHANGES FOR NAVBAR
-  $(document).ready(function(){
-   let scroll_start = 0;
-   let startchange = $('#startchange');
-   let offset = startchange.offset();
-   $(document).scroll(function() {
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#nav').css('background-color', '#fff');
-          $('.navbar').css('padding', '5px 15px');
-          $('.logo').css('height', '45px');
-          $('.nav-element').css('color', '#014453');
-      } else {
-        $('#nav').css('background-color', 'transparent');
-        $('.logo').css('height', '65px');
-        $('.nav-element').css('color', '#fff');
-        $('.navbar').css('padding', '15px');
-      }
-   });
-  });
+    $(document).ready(function(){
+     let scroll_start = 0;
+     let startchange = $('#startchange');
+     let offset = startchange.offset();
+     $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('#nav').css({'background-color': '#fff', 'border-bottom': '2px solid orange'});
+            $('.navbar').css('padding', '5px 15px');
+            $('.logo').css('height', '45px');
+            $('.nav-element').css('color', '#014453');
+        } else {
+          $('#nav').css({'background-color': 'transparent', 'border-bottom': 'none'});
+          $('.logo').css('height', '65px');
+          $('.nav-element').css('color', '#fff');
+          $('.navbar').css('padding', '15px');
+
+        }
+     });
+    });
   // DROPDOWN FOR NAV ITEMS
   $('.dropdown-button').dropdown({
       inDuration: 300,
