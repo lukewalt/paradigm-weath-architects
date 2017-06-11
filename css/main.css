@@ -717,9 +717,9 @@ h1 {
 .secondary-color {
   display: block;
   /*padding: 20px 0 10px 10px;*/
-  background-color: #c9c9c9;
+  background-color: #bbb;
   min-height: 200px;
-  /*position: absolute;*/
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -727,17 +727,18 @@ h1 {
 }
 
 .cprfoot {
+  position: absolute;
   bottom: 0;
 }
+
 .cprfoot ul {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   font-size: 15px;
-  justify-content: center;
-  margin-right: 5%;
 }
 
-.cprfoot ul li a {
+.cprfoot ul li a,
+.cprfoot ul li {
   color: #fff;
   margin-right: 20px;
 }
