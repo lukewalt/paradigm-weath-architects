@@ -4,6 +4,9 @@ app.controller('MainCtrl', function ($scope, $location, $window, $timeout, authF
     $(this).toggleClass("menu-expanded-inv");
   });
 
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
 
 
   AOS.init({

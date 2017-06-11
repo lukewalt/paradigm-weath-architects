@@ -40,9 +40,9 @@ app.config(($routeProvider, $locationProvider) => {
         controller: 'ResrCtrl',
         templateUrl: 'partials/resources.html'
     })
-    .when('/disclaimer', {
+    .when('/disclosure', {
         controller: 'legalCtrl',
-        templateUrl: 'partials/disclaimer.html'
+        templateUrl: 'partials/disclosure.html'
     })
     .when('/privacy', {
         controller: 'legalCtrl',
