@@ -196,6 +196,49 @@ h1 {
   text-align: center;
 }
 
+.table-index {
+  margin: 75px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.table-index li {
+  align-items: center;
+}
+
+.tbl {
+  width:100%;
+  margin: 0  0 150px;
+  color: #014453;
+}
+
+.colm-wid {
+  width: 25%;
+  text-align: center;
+  padding: 0;
+}
+
+.colm-wid * {
+  vertical-align: text-top;
+}
+
+.services-label {
+  font-size: 2em;
+  vertical-align: text-top;
+  text-align: left;
+}
+.services-col {
+  text-transform: uppercase;
+}
+
+.tbl-img {
+  height: 25px;
+  text-align: center;
+}
+.tbl-img img {
+  height: 25px;
+}
 
 
 
@@ -712,6 +755,7 @@ h1 {
 
 }
 
+
 /*---------------------- FOOTER ---------------------- */
 
 .secondary-color {
@@ -729,6 +773,7 @@ h1 {
 .cprfoot {
   position: absolute;
   bottom: 0;
+
 }
 
 .cprfoot ul {
